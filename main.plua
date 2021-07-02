@@ -1,0 +1,71 @@
+--Проект 'T1-PLCnext-Demo'
+
+prg = require("prg")                        --Технологические объекты.
+require( "sharedmodbus" )                   --Межконтроллерный обмен
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+--Пользовательская функция инициализации, выполняемая однократно в PAC.
+
+A5HL1_info = { lamp = A5HL1 }
+A5HL2_info = { lamp = A5HL2 }
+A5HL3_info = { lamp = A5HL3 }
+A5HL4_info = { lamp = A5HL4 }
+A5HL5_info = { lamp = A5HL5 }
+A5HL6_info = { lamp = A5HL6 }
+A5HL7_info = { lamp = A5HL7 }
+A5HL8_info = { lamp = A5HL8 }
+
+function user_init()
+    local delay = 5000
+    local delta = 200
+
+    A5HL1_info.start_time = get_millisec()
+    A5HL2_info.start_time = A5HL1_info.start_time - delta
+    A5HL3_info.start_time = A5HL2_info.start_time - delta
+    A5HL4_info.start_time = A5HL3_info.start_time - delta
+    A5HL5_info.start_time = A5HL4_info.start_time - delta
+    A5HL6_info.start_time = A5HL5_info.start_time - delta
+    A5HL7_info.start_time = A5HL6_info.start_time - delta
+    A5HL8_info.start_time = A5HL7_info.start_time - delta
+end
+
+function blink( info )
+    if get_delta_millisec( info.start_time ) > 2000 then
+        if info.lamp:get_state() == 1 then info.lamp:set_state( 0 ) else info.lamp:set_state( 1 ) end
+        info.start_time = get_millisec()
+    end
+end
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+--Пользовательская функция, выполняемая каждый цикл в PAC.
+
+
+function user_eval()
+    A2HL1:set_state( A2DI1:get_state() )
+    A2HL2:set_state( A2DI2:get_state() )
+    A2HL3:set_state( A2DI3:get_state() )
+    A2HL4:set_state( A2DI4:get_state() )
+    A2HL5:set_state( A2DI5:get_state() )
+    A2HL6:set_state( A2DI6:get_state() )
+    A2HL7:set_state( A2DI7:get_state() )
+    A2HL8:set_state( A2DI8:get_state() )
+
+    A3AO1:set_value( A3AI1:get_value() )
+
+    blink( A5HL1_info )
+    blink( A5HL2_info )
+    blink( A5HL3_info )
+    blink( A5HL4_info )
+    blink( A5HL5_info )
+    blink( A5HL6_info )
+    blink( A5HL7_info )
+    blink( A5HL8_info )
+end
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+--Функция инициализации параметров, выполняемая однократно в PAC.
+
+function user_init_params()
+end
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
