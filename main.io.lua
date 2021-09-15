@@ -123,7 +123,7 @@ devices =
         name    = 'A2HL1',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -141,7 +141,7 @@ devices =
         name    = 'A2HL2',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -159,7 +159,7 @@ devices =
         name    = 'A2HL3',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -177,7 +177,7 @@ devices =
         name    = 'A2HL4',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -195,7 +195,7 @@ devices =
         name    = 'A2HL5',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -213,7 +213,7 @@ devices =
         name    = 'A2HL6',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -231,7 +231,7 @@ devices =
         name    = 'A2HL7',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -267,7 +267,7 @@ devices =
         name    = 'A5HL1',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -285,7 +285,7 @@ devices =
         name    = 'A5HL2',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -303,7 +303,7 @@ devices =
         name    = 'A5HL3',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -321,7 +321,7 @@ devices =
         name    = 'A5HL4',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -339,7 +339,7 @@ devices =
         name    = 'A5HL5',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -357,7 +357,7 @@ devices =
         name    = 'A5HL6',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -375,7 +375,7 @@ devices =
         name    = 'A5HL7',
         descr   = '',
         dtype   = 11,
-        subtype = -1, -- HL
+        subtype = 1, -- HL
         article = 'SIE.3SB3217-6AA40',
         DO =
             {
@@ -804,6 +804,57 @@ devices =
                 },
             },
         par = {1000 --[[P_ERR]] }
+        },
+
+        {
+        name    = 'PT2',
+        descr   = '',
+        dtype   = 18,
+        subtype = 3, -- DEV_SPAE
+        article = 'FES.8001446',
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 19,
+                physical_port = 72,
+                logical_port  = 7,
+                module_offset = 4
+                },
+            },
+        par = {1000 --[[P_ERR]] }
+        },
+
+        {
+        name    = 'HLA1',
+        descr   = '',
+        dtype   = 21,
+        subtype = 3, -- HLA_IOLINK
+        article = 'PXC.1191993',
+        prop = --Дополнительные свойства
+            {
+            SIGNALS_SEQUENCE = 'GYRA',
+            },
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 18,
+                physical_port = 71,
+                logical_port  = 6,
+                module_offset = 4
+                },
+            },
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 18,
+                physical_port = 71,
+                logical_port  = 6,
+                module_offset = 4
+                },
+            },
         },
 
     }
