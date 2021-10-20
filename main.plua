@@ -60,6 +60,24 @@ function user_eval()
     blink( A5HL6_info )
     blink( A5HL7_info )
     blink( A5HL8_info )
+
+    local GREEN_MIN = 0.3
+    local YELLOW_MIN = 3
+    local RED_MIN = 6
+    
+    if A3AI1:get_value() < GREEN_MIN then
+        HLA1:off()
+    elseif A3AI1:get_value() >= GREEN_MIN and A3AI1:get_value() < YELLOW_MIN then
+	HLA1:turn_off_red()
+	HLA1:turn_off_yellow()
+        HLA1:normal_blink_green()
+    elseif A3AI1:get_value() >= YELLOW_MIN and A3AI1:get_value() < RED_MIN then
+	HLA1:off()
+        HLA1:turn_on_yellow()
+    elseif A3AI1:get_value() >= RED_MIN then
+	HLA1:off()
+        HLA1:turn_on_red()
+    end
 end
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
