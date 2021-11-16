@@ -64,7 +64,7 @@ function user_eval()
     local GREEN_MIN = 0.3
     local YELLOW_MIN = 3
     local RED_MIN = 6
-    
+
     if A3AI1:get_value() < GREEN_MIN then
         HLA1:off()
     elseif A3AI1:get_value() >= GREEN_MIN and A3AI1:get_value() < YELLOW_MIN then
