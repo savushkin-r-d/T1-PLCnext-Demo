@@ -1,0 +1,9 @@
+[submodule "sys"]
+	path = sys
+	url = https://github.com/savushkin-r-d/ptusa-Lua-system.git
+[submodule "bin"]
+	path = bin
+	url = https://github.com/savushkin-r-d/ptusa-main-bin.git
+[submodule "spec"]
+	path = spec
+	url = https://github.com/savushkin-r-d/ptusa-Lua-spec.git
