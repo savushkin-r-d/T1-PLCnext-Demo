@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<Linerecorder_MultiSensor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ifm.com/datalink/LinerecorderSensor4">
+  <Version>1.9.4.88</Version>
+  <Devices>
+    <Device>
+      <Sensor>
+        <VendorId>176</VendorId>
+        <DeviceId>180</DeviceId>
+        <ProductId>AXL F IOL8 2H</ProductId>
+      </Sensor>
+      <Parameters>
+        <Param id="V_PortConfig_01" subindex="" internalValue="0" name="Port1 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_02" subindex="" internalValue="0" name="Port2 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_03" subindex="" internalValue="0" name="Port3 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_04" subindex="" internalValue="0" name="Port4 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_05" subindex="" internalValue="0" name="Port5 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_06" subindex="" internalValue="0" name="Port6 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_07" subindex="" internalValue="0" name="Port7 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_08" subindex="" internalValue="3" name="Port8 mode" value="3" unit="" text="Disabled" />
+      </Parameters>
+      <Devices>
+        <Device>
+          <Sensor>
+            <VendorId>310</VendorId>
+            <DeviceId>446</DeviceId>
+            <ProductId>TA2502</ProductId>
+          </Sensor>
+          <Port>1</Port>
+          <Parameters>
+            <Param id="V_FOU2" subindex="" internalValue="4" name="FOU2" value="4" unit="" text="OFF" />
+            <Param id="V_Uni" subindex="" internalValue="0" name="uni" value="0" unit="" text="°C" />
+            <Param id="V_OU2" subindex="" internalValue="1" name="ou2" value="1" unit="" text="I / Analog signal 4…20 mA" />
+            <Param id="V_ASP2" subindex="" internalValue="0" name="ASP2" value="0,0" unit="°C" />
+            <Param id="V_AEP2" subindex="" internalValue="2000" name="AEP2" value="200,0" unit="°C" />
+            <Param id="V_COF" subindex="" internalValue="0" name="coF" value="0,0" unit="°C" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+            <Param id="V_DeviceStatus" subindex="" internalValue="0" name="Состояние прибора" value="0" unit="" text="Прибор ОK" />
+            <Param id="V_DetailedDeviceStatus" subindex="1" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [1]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="2" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [2]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="3" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [3]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="4" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [4]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="5" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [5]" value="0x00,0x00,0x00" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>310</VendorId>
+            <DeviceId>304</DeviceId>
+            <ProductId>LMT100</ProductId>
+          </Sensor>
+          <Port>2</Port>
+          <Parameters>
+            <Param id="V_SP1" subindex="" internalValue="62" name="SP1" value="62" unit="%" />
+            <Param id="V_rP1" subindex="" internalValue="54" name="rP1" value="54" unit="%" />
+            <Param id="V_ou1" subindex="" internalValue="3" name="ou1" value="3" unit="" text="Hno / Hysteresis fct normally open" />
+            <Param id="V_SP2" subindex="" internalValue="62" name="SP2" value="62" unit="%" />
+            <Param id="V_rP2" subindex="" internalValue="54" name="rP2" value="54" unit="%" />
+            <Param id="V_ou2" subindex="" internalValue="4" name="ou2" value="4" unit="" text="Hnc / Hysteresis fct normally closed" />
+            <Param id="V_FOU1" subindex="" internalValue="4" name="FOU1" value="4" unit="" text="OFF" />
+            <Param id="V_VDMA-dr1" subindex="" internalValue="0" name="dr1" value="0,0" unit="s" />
+            <Param id="V_FOU2" subindex="" internalValue="4" name="FOU2" value="4" unit="" text="OFF" />
+            <Param id="V_VDMA-dr2" subindex="" internalValue="0" name="dr2" value="0,0" unit="s" />
+            <Param id="V_P-n" subindex="" internalValue="0" name="P-n" value="0" unit="" text="PnP" />
+            <Param id="V_dFo" subindex="" internalValue="0" name="dFo" value="0,0" unit="s" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>310</VendorId>
+            <DeviceId>256</DeviceId>
+            <ProductId>PI2797</ProductId>
+          </Sensor>
+          <Port>3</Port>
+          <Parameters>
+            <Param id="V_SP1" subindex="" internalValue="250" name="SP1" value="250" unit="mbar" />
+            <Param id="V_RP1" subindex="" internalValue="230" name="rP1" value="230" unit="mbar" />
+            <Param id="V_OU1" subindex="" internalValue="4" name="OU1" value="4" unit="" text="Hno" />
+            <Param id="V_OU2" subindex="" internalValue="1" name="OU2" value="1" unit="" text="I" />
+            <Param id="V_SP2" subindex="" internalValue="750" name="SP2" value="750" unit="mbar" />
+            <Param id="V_RP2" subindex="" internalValue="730" name="rP2" value="730" unit="mbar" />
+            <Param id="V_QUANT" subindex="" internalValue="0" name="Uni" value="0" unit="" text="mbar" />
+            <Param id="V_SELD" subindex="" internalValue="1" name="SELd" value="1" unit="" text="Pressure" />
+            <Param id="V_ASP" subindex="" internalValue="0" name="ASP" value="0" unit="mbar" />
+            <Param id="V_AEP" subindex="" internalValue="1000" name="AEP" value="1000" unit="mbar" />
+            <Param id="V_HI" subindex="" internalValue="-50" name="HI" value="-50" unit="mbar" />
+            <Param id="V_LO" subindex="" internalValue="1000" name="LO" value="1000" unit="mbar" />
+            <Param id="V_COF" subindex="" internalValue="0" name="COF" value="0,00" unit="%" />
+            <Param id="V_DSP1" subindex="" internalValue="0" name="dS1" value="0,000" unit="s" />
+            <Param id="V_DRP1" subindex="" internalValue="0" name="dr1" value="0,000" unit="s" />
+            <Param id="V_DSP2" subindex="" internalValue="0" name="dS2" value="0,000" unit="s" />
+            <Param id="V_DRP2" subindex="" internalValue="0" name="dr2" value="0,000" unit="s" />
+            <Param id="V_FOU1" subindex="" internalValue="1" name="FOU1" value="1" unit="" text="OU" />
+            <Param id="V_FOU2" subindex="" internalValue="1" name="FOU2" value="1" unit="" text="OU" />
+            <Param id="V_DAP" subindex="" internalValue="6" name="dAP" value="0,06" unit="s" />
+            <Param id="V_DAA" subindex="" internalValue="3" name="dAA" value="0,03" unit="s" />
+            <Param id="V_DISP" subindex="" internalValue="2" name="diS" value="2" unit="" text="Medium update" />
+            <Param id="V_SSEL" subindex="" internalValue="1" name="S.Sel" value="1" unit="" text="OU" />
+            <Param id="V_SProc" subindex="" internalValue="-20000" name="S.PR Process value" value="0,000" unit="mbar" />
+            <Param id="V_SPerc" subindex="" internalValue="0" name="S.PR Process value in %" value="0,0" unit="%" />
+            <Param id="V_SOU1" subindex="" internalValue="0" name="S.OU1" value="0" unit="" text="open" />
+            <Param id="V_SOU2" subindex="" internalValue="0" name="S.OU2 Switching output" value="0" unit="" text="open" />
+            <Param id="V_SOUANA" subindex="" internalValue="400" name="S.OU2 Analog output" value="4,00" unit="mA" />
+            <Param id="V_STIM" subindex="" internalValue="2" name="S.Tim" value="2" unit="" text="3 min" />
+            <Param id="V_SOFT_LOCK" subindex="" internalValue="1" name="S.Loc" value="1" unit="" text="unlocked" />
+            <Param id="V_LOCK" subindex="" internalValue="1" name="Loc" value="1" unit="" text="unlocked" />
+            <Param id="V_ApplicationSpecificName" subindex="" internalValue="" name="Application Specific Name" value="" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>310</VendorId>
+            <DeviceId>921</DeviceId>
+            <ProductId>LDL100</ProductId>
+          </Sensor>
+          <Port>4</Port>
+          <Parameters>
+            <Param id="V_FunctionTag" subindex="" internalValue="***" name="Function Tag" value="***" unit="" />
+            <Param id="V_LocationTag" subindex="" internalValue="***" name="Location Tag" value="***" unit="" />
+            <Param id="V_dAP" subindex="" internalValue="1" name="dAP" value="1" unit="s" />
+            <Param id="V_SEL2" subindex="" internalValue="1" name="SEL2" value="1" unit="" text="COND" />
+            <Param id="V_FOU2" subindex="" internalValue="4" name="FOU2" value="4" unit="" text="OFF" />
+            <Param id="V_Operating_Hours_Histogram" subindex="1" internalValue="0" name="Operating hours histogram. Lower -50°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="2" internalValue="0" name="Operating hours histogram. -50...-40°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="3" internalValue="0" name="Operating hours histogram. -40...-30°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="4" internalValue="0" name="Operating hours histogram. -30...-20°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="5" internalValue="0" name="Operating hours histogram. -20...-10°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="6" internalValue="0" name="Operating hours histogram. -10...-0°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="7" internalValue="0" name="Operating hours histogram. -0...10°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="8" internalValue="0" name="Operating hours histogram. 10...20°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="9" internalValue="0" name="Operating hours histogram. 20...30°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="10" internalValue="0" name="Operating hours histogram. 30...40°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="11" internalValue="0" name="Operating hours histogram. 40...50°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="12" internalValue="0" name="Operating hours histogram. 50...60°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="13" internalValue="0" name="Operating hours histogram. 60...70°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="14" internalValue="0" name="Operating hours histogram. 70...80°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="15" internalValue="0" name="Operating hours histogram. 80...90°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="16" internalValue="0" name="Operating hours histogram. 90...100°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="17" internalValue="0" name="Operating hours histogram. 100...110°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="18" internalValue="0" name="Operating hours histogram. 110...120°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="19" internalValue="0" name="Operating hours histogram. 120...130°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="20" internalValue="0" name="Operating hours histogram. 130...140°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="21" internalValue="0" name="Operating hours histogram. 140...150°C" value="0" unit="s" />
+            <Param id="V_Operating_Hours_Histogram" subindex="22" internalValue="0" name="Operating hours histogram. Upper 150°C" value="0" unit="s" />
+            <Param id="V_Internal_Temperature" subindex="" internalValue="" name="Internal temperature" value="" unit="°C" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="1" internalValue="0" name="Active Events. Bit_31" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="2" internalValue="0" name="Active Events. Bit_30" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="3" internalValue="0" name="Active Events. Bit_16" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="4" internalValue="0" name="Active Events. Bit_15" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="5" internalValue="0" name="Active Events. Bit_14" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="6" internalValue="0" name="Active Events. Bit_12" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="7" internalValue="0" name="Active Events. Bit_8" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="8" internalValue="0" name="Active Events. Bit_9" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="9" internalValue="0" name="Active Events. Bit_5" value="0" unit="" text="noEv" />
+            <Param id="V_BitCoded_ActiveEvents" subindex="10" internalValue="0" name="Active Events. Bit_0" value="0" unit="" text="noEv" />
+            <Param id="V_ParaConfigFaultCollection" subindex="1" internalValue="0" name="Param configuration fault [1]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="2" internalValue="0" name="Param configuration fault [2]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="3" internalValue="0" name="Param configuration fault [3]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="4" internalValue="0" name="Param configuration fault [4]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="5" internalValue="0" name="Param configuration fault [5]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="6" internalValue="0" name="Param configuration fault [6]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="7" internalValue="0" name="Param configuration fault [7]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="8" internalValue="0" name="Param configuration fault [8]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="9" internalValue="0" name="Param configuration fault [9]" value="0" unit="" text="OK" />
+            <Param id="V_ParaConfigFaultCollection" subindex="10" internalValue="0" name="Param configuration fault [10]" value="0" unit="" text="OK" />
+            <Param id="V_Hi-C_COND" subindex="" internalValue="0" name="Hi.C" value="0" unit="µS/cm" />
+            <Param id="V_Lo-C_COND" subindex="" internalValue="0" name="Lo.C" value="0" unit="µS/cm" />
+            <Param id="V_Hi-T_TEMP" subindex="" internalValue="0" name="Hi.T" value="0,0" unit="°C" />
+            <Param id="V_Lo-T_TEMP" subindex="" internalValue="0" name="Lo.T" value="0,0" unit="°C" />
+            <Param id="V_S-On" subindex="" internalValue="0" name="S.On" value="0" unit="" text="OFF" />
+            <Param id="V_S-Tim" subindex="" internalValue="2" name="S.Tim" value="2" unit="" text="3 min" />
+            <Param id="V_S-CND" subindex="" internalValue="500" name="S.CND" value="500" unit="µS/cm" />
+            <Param id="V_S-TMP" subindex="" internalValue="200" name="S.TMP" value="20,0" unit="°C" />
+            <Param id="V_ou2" subindex="" internalValue="1" name="ou2" value="1" unit="" text="I / Analog signal 4…20 mA" />
+            <Param id="V_ASP2_COND" subindex="" internalValue="0" name="ASP2 - COND" value="0" unit="µS/cm" />
+            <Param id="V_AEP2_COND" subindex="" internalValue="15000" name="AEP2 - COND" value="15000" unit="µS/cm" />
+            <Param id="V_ASP2_TEMP" subindex="" internalValue="0" name="ASP2 - TEMP" value="0,0" unit="°C" />
+            <Param id="V_AEP2_TEMP" subindex="" internalValue="1500" name="AEP2 - TEMP" value="150,0" unit="°C" />
+            <Param id="V_coFU_TEMP" subindex="" internalValue="0" name="Offset - TEMP" value="0,0" unit="K" />
+            <Param id="V_uni-T" subindex="" internalValue="0" name="uni.T" value="0" unit="" text="°C" />
+            <Param id="V_T-Cmp" subindex="" internalValue="200" name="T.Cmp" value="2,00" unit="%" />
+            <Param id="V_rEF-T" subindex="" internalValue="250" name="rEF.T" value="25,0" unit="°C" />
+            <Param id="V_CGA" subindex="" internalValue="1000" name="CGA" value="100,0" unit="%" />
+            <Param id="V_MDC1Descr" subindex="1" internalValue="0" name="MDC 1 Descr. Lower limit" value="0" unit="" text="0" />
+            <Param id="V_MDC1Descr" subindex="2" internalValue="15000" name="MDC 1 Descr. Upper limit" value="15000" unit="" text="15000" />
+            <Param id="V_MDC1Descr" subindex="3" internalValue="1299" name="MDC 1 Descr. Unit code" value="1299" unit="" text="S/m" />
+            <Param id="V_MDC1Descr" subindex="4" internalValue="-4" name="MDC 1 Descr. Scale" value="-4" unit="" text="-4" />
+            <Param id="V_MDC2Descr" subindex="1" internalValue="-250" name="MDC 2 Descr. Lower limit" value="-250" unit="" text="-250" />
+            <Param id="V_MDC2Descr" subindex="2" internalValue="1500" name="MDC 2 Descr. Upper limit" value="1500" unit="" text="1500" />
+            <Param id="V_MDC2Descr" subindex="3" internalValue="1001" name="MDC 2 Descr. Unit code" value="1001" unit="" text="°C" />
+            <Param id="V_MDC2Descr" subindex="4" internalValue="-1" name="MDC 2 Descr. Scale" value="-1" unit="" text="-1" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+            <Param id="V_DeviceStatus" subindex="" internalValue="0" name="Состояние прибора" value="0" unit="" text="Прибор ОK" />
+            <Param id="V_DetailedDeviceStatus" subindex="1" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [1]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="2" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [2]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="3" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [3]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="4" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [4]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="5" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [5]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="6" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [6]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="7" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [7]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="8" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [8]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="9" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [9]" value="0x00,0x00,0x00" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="10" internalValue="0x00,0x00,0x00" name="Подробное состояние прибора [10]" value="0x00,0x00,0x00" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>1292</VendorId>
+            <DeviceId>2</DeviceId>
+            <ProductId>ThinkTop V70 IO-Link</ProductId>
+          </Sensor>
+          <Port>5</Port>
+          <Parameters>
+            <Param id="V_FunctionTag" subindex="" internalValue="***" name="Function Tag" value="***" unit="" />
+            <Param id="V_LocationTag" subindex="" internalValue="***" name="Location Tag" value="***" unit="" />
+            <Param id="V_BLOB_ID" subindex="" internalValue="0" name="BLOB ID" value="0" unit="" text="Idle" />
+            <Param id="V_ProdDate" subindex="" internalValue="" name="Production date" value="" unit="" />
+            <Param id="V_ValveType" subindex="" internalValue="" name="Valve Type" value="" unit="" />
+            <Param id="V_SetupType" subindex="" internalValue="" name="Setup Type" value="" unit="" />
+            <Param id="V_ErrMod" subindex="" internalValue="10" name="Error Modifier" value="10" unit="s" />
+            <Param id="V_PwrSave" subindex="" internalValue="0" name="Power Save" value="0" unit="" text="Disabled" />
+            <Param id="V_LED-Colour" subindex="1" internalValue="5" name="RGB-Colour. Button press" value="5" unit="" text="Purple" />
+            <Param id="V_LED-Colour" subindex="2" internalValue="4" name="RGB-Colour. Error" value="4" unit="" text="Red" />
+            <Param id="V_LED-Colour" subindex="3" internalValue="0" name="RGB-Colour. Out" value="0" unit="" text="RGB off" />
+            <Param id="V_LED-Colour" subindex="4" internalValue="2" name="RGB-Colour. De-En" value="2" unit="" text="Green" />
+            <Param id="V_LED-Colour" subindex="5" internalValue="7" name="RGB-Colour. Main" value="7" unit="" text="White" />
+            <Param id="V_LED-Colour" subindex="6" internalValue="3" name="RGB-Colour. Usl" value="3" unit="" text="Cyan" />
+            <Param id="V_LED-Colour" subindex="7" internalValue="6" name="RGB-Colour. Lsp" value="6" unit="" text="Yellow" />
+            <Param id="V_LED-Colour" subindex="8" internalValue="5" name="RGB-Colour. Wink" value="5" unit="" text="Purple" />
+            <Param id="V_PMO" subindex="" internalValue="0" name="USA Bit Mapping" value="0" unit="" text="USA bit mapping disabled" />
+            <Param id="V_Loc" subindex="" internalValue="0" name="Key Lock" value="0" unit="" text="Unlocked" />
+            <Param id="V_BurstClean" subindex="" internalValue="0" name="Burst Clean" value="0" unit="" text="Disabled" />
+            <Param id="V_Log" subindex="1" internalValue="" name="Log. PowerUps" value="" unit="" />
+            <Param id="V_Log" subindex="2" internalValue="" name="Log. RunTime" value="" unit="h" />
+            <Param id="V_Log" subindex="3" internalValue="" name="Log. LastCustomisation" value="" unit="h" />
+            <Param id="V_Temp" subindex="1" internalValue="" name="Temperature. Current" value="" unit="°C" />
+            <Param id="V_Temp" subindex="2" internalValue="" name="Temperature. Min" value="" unit="°C" />
+            <Param id="V_Temp" subindex="3" internalValue="" name="Temperature. Max" value="" unit="°C" />
+            <Param id="V_PressureShockCnt" subindex="" internalValue="0" name="Pressure Shock Counter" value="0" unit="" />
+            <Param id="V_SV_act" subindex="1" internalValue="0" name="SV-activations. SV1" value="0" unit="" />
+            <Param id="V_SV_act" subindex="2" internalValue="0" name="SV-activations. SV2" value="0" unit="" />
+            <Param id="V_SV_act" subindex="3" internalValue="0" name="SV-activations. SV3" value="0" unit="" />
+            <Param id="V_SV_on" subindex="1" internalValue="0" name="SV-ON_time. SV1" value="0" unit="min" />
+            <Param id="V_SV_on" subindex="2" internalValue="0" name="SV-ON_time. SV2" value="0" unit="min" />
+            <Param id="V_SV_on" subindex="3" internalValue="0" name="SV-ON_time. SV3" value="0" unit="min" />
+            <Param id="V_SetupStrokeEn" subindex="1" internalValue="0" name="Setup En-stroke. SV1 (main)" value="0" unit="ms" />
+            <Param id="V_SetupStrokeEn" subindex="2" internalValue="0" name="Setup En-stroke. SV2 (USL)" value="0" unit="ms" />
+            <Param id="V_SetupStrokeEn" subindex="3" internalValue="0" name="Setup En-stroke. SV3 (LSP)" value="0" unit="ms" />
+            <Param id="V_SetupStrokeDeEn" subindex="1" internalValue="0" name="Setup DeEn-stroke. SV1" value="0" unit="ms" />
+            <Param id="V_SetupStrokeDeEn" subindex="2" internalValue="0" name="Setup DeEn-stroke. SV2" value="0" unit="ms" />
+            <Param id="V_SetupStrokeDeEn" subindex="3" internalValue="0" name="Setup DeEn-stroke. SV3" value="0" unit="ms" />
+            <Param id="V_SetupPosDeEn" subindex="1" internalValue="" name="Setup Position Data (DeEn). Pos De-En" value="" unit="mm" />
+            <Param id="V_SetupPosDeEn" subindex="2" internalValue="0" name="Setup Position Data (DeEn). Switchpoint logic" value="0" unit="" text="High active" />
+            <Param id="V_SetupPosDeEn" subindex="3" internalValue="" name="Setup Position Data (DeEn). Switchpoint hysteresis" value="" unit="mm" />
+            <Param id="V_SetupPosMain" subindex="1" internalValue="" name="Setup Position Data (Main). Pos Main" value="" unit="mm" />
+            <Param id="V_SetupPosMain" subindex="2" internalValue="0" name="Setup Position Data (Main). Switchpoint logic" value="0" unit="" text="High active" />
+            <Param id="V_SetupPosMain" subindex="3" internalValue="" name="Setup Position Data (Main). Switchpoint hysteresis" value="" unit="mm" />
+            <Param id="V_SetupPosMain" subindex="4" internalValue="" name="Setup Position Data (Main).  " value="" unit="" />
+            <Param id="V_SetupPosLsp" subindex="1" internalValue="" name="Setup Position Data (Lsp). Pos Lsp" value="" unit="mm" />
+            <Param id="V_SetupPosLsp" subindex="2" internalValue="0" name="Setup Position Data (Lsp). Switchpoint logic" value="0" unit="" text="High active" />
+            <Param id="V_SetupPosLsp" subindex="3" internalValue="" name="Setup Position Data (Lsp). Switchpoint hysteresis" value="" unit="mm" />
+            <Param id="V_SetupPosUsl" subindex="1" internalValue="" name="Setup Position Data (Usl). Pos Usl" value="" unit="mm" />
+            <Param id="V_SetupPosUsl" subindex="2" internalValue="0" name="Setup Position Data (Usl). Switchpoint logic" value="0" unit="" text="High active" />
+            <Param id="V_SetupPosUsl" subindex="3" internalValue="" name="Setup Position Data (Usl). Switchpoint hysteresis" value="" unit="mm" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_DeviceAccessLocks" subindex="3" internalValue="0" name="Блокировки доступа к прибору. Локальное параметрирование" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>176</VendorId>
+            <DeviceId>73216</DeviceId>
+            <ProductId>1191993</ProductId>
+          </Sensor>
+          <Port>6</Port>
+          <Parameters>
+            <Param id="V_DeviceAccessLocks" subindex="1" internalValue="0" name="Блокировки доступа к прибору. Доступ к записи параметра" value="0" unit="" text="Разблокирован" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="" name="Специфичный для приложения тег" value="" unit="" />
+          </Parameters>
+        </Device>
+        <Device>
+          <Sensor>
+            <VendorId>333</VendorId>
+            <DeviceId>135</DeviceId>
+            <ProductId>8001446</ProductId>
+          </Sensor>
+          <Port>7</Port>
+          <Parameters>
+            <Param id="V_P58" subindex="" internalValue="0" name="Teach channel" value="0" unit="" text="Default channel" />
+            <Param id="V_P59" subindex="1" internalValue="0" name="Teach-in status. Teach-in flag SP2 TP2" value="0" unit="" text="Teachpoint is not taught or not successfully" />
+            <Param id="V_P59" subindex="2" internalValue="0" name="Teach-in status. Teach-in flag SP2 TP1" value="0" unit="" text="Teachpoint is not taught or not successfully" />
+            <Param id="V_P59" subindex="3" internalValue="0" name="Teach-in status. Teach-in flag SP1 TP2" value="0" unit="" text="Teachpoint is not taught or not successfully" />
+            <Param id="V_P59" subindex="4" internalValue="0" name="Teach-in status. Teach-in flag SP1 TP1" value="0" unit="" text="Teachpoint is not taught or not successfully" />
+            <Param id="V_P59" subindex="5" internalValue="0" name="Teach-in status. Teach-in state" value="0" unit="" text="Idle" />
+            <Param id="V_P60" subindex="1" internalValue="11468" name="BDC1 set points . Set point 1 (SP.Lo)" value="7,00" unit="bar" />
+            <Param id="V_P60" subindex="2" internalValue="9830" name="BDC1 set points . Set point 2 (SP.Hi)" value="6,00" unit="bar" />
+            <Param id="V_P61" subindex="1" internalValue="0" name="BDC1 switch parameters. Switch point logic (LOGC)" value="0" unit="" text="Normally open (NO)" />
+            <Param id="V_P61" subindex="2" internalValue="1" name="BDC1 switch parameters. Switch point mode (Fctn)" value="1" unit="" text="Single point mode" />
+            <Param id="V_P61" subindex="3" internalValue="82" name="BDC1 switch parameters. Hysteresis (HY)" value="0,05" unit="bar" />
+            <Param id="V_P62" subindex="1" internalValue="6553" name="BDC2 set points . Set point 1 (SP.Lo)" value="4,00" unit="bar" />
+            <Param id="V_P62" subindex="2" internalValue="3277" name="BDC2 set points . Set point 2 (SP.Hi)" value="2,00" unit="bar" />
+            <Param id="V_P63" subindex="1" internalValue="0" name="BDC2 switch parameters. Switch point logic (LOGC)" value="0" unit="" text="Normally open (NO)" />
+            <Param id="V_P63" subindex="2" internalValue="1" name="BDC2 switch parameters. Switch point mode (Fctn)" value="1" unit="" text="Single point mode" />
+            <Param id="V_P63" subindex="3" internalValue="82" name="BDC2 switch parameters. Hysteresis (HY)" value="0,05" unit="bar" />
+            <Param id="V_P8197" subindex="" internalValue="" name="Min PDV (InA)" value="" unit="bar" />
+            <Param id="V_P8198" subindex="" internalValue="" name="Max PDV (InA)" value="" unit="bar" />
+            <Param id="V_P386" subindex="" internalValue="0" name="Filter response time (Filt)" value="0" unit="" text="Filter disabeled" />
+            <Param id="V_P482" subindex="" internalValue="4" name="Display brightness" value="4" unit="" />
+            <Param id="V_P488" subindex="" internalValue="0" name="Display duration (di)" value="0" unit="min" text="Always On" />
+            <Param id="V_P489" subindex="" internalValue="0" name="Display orientation (do)" value="0" unit="" text="standard" />
+            <Param id="V_P490" subindex="" internalValue="0" name="Lock code" value="0" unit="" text="Off" />
+            <Param id="V_DirectParameters_1" subindex="1" internalValue="" name="Прямые параметры 1. Запасной" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="2" internalValue="" name="Прямые параметры 1. Время цикла мастера" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="3" internalValue="" name="Прямые параметры 1. Мин. время цикла" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="4" internalValue="" name="Прямые параметры 1. Возможность М-последовательности" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="5" internalValue="17" name="Прямые параметры 1. ID версии IO-Link" value="17" unit="" />
+            <Param id="V_DirectParameters_1" subindex="6" internalValue="" name="Прямые параметры 1. Длина входа рабочих данных" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="7" internalValue="" name="Прямые параметры 1. Длина выхода рабочих данных" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="8" internalValue="" name="Прямые параметры 1. ID производителя 1" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="9" internalValue="" name="Прямые параметры 1. ID производителя 2" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="10" internalValue="" name="Прямые параметры 1. ID прибора 1" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="11" internalValue="" name="Прямые параметры 1. ID прибора 2" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="12" internalValue="" name="Прямые параметры 1. ID прибора 3" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="13" internalValue="" name="Прямые параметры 1. Запасной" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="14" internalValue="" name="Прямые параметры 1. Запасной" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="15" internalValue="" name="Прямые параметры 1. Запасной" value="" unit="" />
+            <Param id="V_DirectParameters_1" subindex="16" internalValue="" name="Прямые параметры 1. Стандартная команда" value="" unit="" />
+            <Param id="V_DeviceAccessLocks" subindex="1" internalValue="0" name="Блокировки доступа к прибору. Доступ к записи параметра" value="0" unit="" text="Разблокирован" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_DeviceAccessLocks" subindex="3" internalValue="0" name="Блокировки доступа к прибору. Локальное параметрирование" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+            <Param id="V_ErrorCount" subindex="" internalValue="0" name="Счётчик ошибок" value="0" unit="" />
+            <Param id="V_DeviceStatus" subindex="" internalValue="0" name="Состояние прибора" value="0" unit="" text="Прибор ОK" />
+            <Param id="V_DetailedDeviceStatus" subindex="1" internalValue="" name="Подробное состояние прибора [1]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="2" internalValue="" name="Подробное состояние прибора [2]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="3" internalValue="" name="Подробное состояние прибора [3]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="4" internalValue="" name="Подробное состояние прибора [4]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="5" internalValue="" name="Подробное состояние прибора [5]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="6" internalValue="" name="Подробное состояние прибора [6]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="7" internalValue="" name="Подробное состояние прибора [7]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="8" internalValue="" name="Подробное состояние прибора [8]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="9" internalValue="" name="Подробное состояние прибора [9]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="10" internalValue="" name="Подробное состояние прибора [10]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="11" internalValue="" name="Подробное состояние прибора [11]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="12" internalValue="" name="Подробное состояние прибора [12]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="13" internalValue="" name="Подробное состояние прибора [13]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="14" internalValue="" name="Подробное состояние прибора [14]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="15" internalValue="" name="Подробное состояние прибора [15]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="16" internalValue="" name="Подробное состояние прибора [16]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="17" internalValue="" name="Подробное состояние прибора [17]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="18" internalValue="" name="Подробное состояние прибора [18]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="19" internalValue="" name="Подробное состояние прибора [19]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="20" internalValue="" name="Подробное состояние прибора [20]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="21" internalValue="" name="Подробное состояние прибора [21]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="22" internalValue="" name="Подробное состояние прибора [22]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="23" internalValue="" name="Подробное состояние прибора [23]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="24" internalValue="" name="Подробное состояние прибора [24]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="25" internalValue="" name="Подробное состояние прибора [25]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="26" internalValue="" name="Подробное состояние прибора [26]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="27" internalValue="" name="Подробное состояние прибора [27]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="28" internalValue="" name="Подробное состояние прибора [28]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="29" internalValue="" name="Подробное состояние прибора [29]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="30" internalValue="" name="Подробное состояние прибора [30]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="31" internalValue="" name="Подробное состояние прибора [31]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="32" internalValue="" name="Подробное состояние прибора [32]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="33" internalValue="" name="Подробное состояние прибора [33]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="34" internalValue="" name="Подробное состояние прибора [34]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="35" internalValue="" name="Подробное состояние прибора [35]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="36" internalValue="" name="Подробное состояние прибора [36]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="37" internalValue="" name="Подробное состояние прибора [37]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="38" internalValue="" name="Подробное состояние прибора [38]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="39" internalValue="" name="Подробное состояние прибора [39]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="40" internalValue="" name="Подробное состояние прибора [40]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="41" internalValue="" name="Подробное состояние прибора [41]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="42" internalValue="" name="Подробное состояние прибора [42]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="43" internalValue="" name="Подробное состояние прибора [43]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="44" internalValue="" name="Подробное состояние прибора [44]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="45" internalValue="" name="Подробное состояние прибора [45]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="46" internalValue="" name="Подробное состояние прибора [46]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="47" internalValue="" name="Подробное состояние прибора [47]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="48" internalValue="" name="Подробное состояние прибора [48]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="49" internalValue="" name="Подробное состояние прибора [49]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="50" internalValue="" name="Подробное состояние прибора [50]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="51" internalValue="" name="Подробное состояние прибора [51]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="52" internalValue="" name="Подробное состояние прибора [52]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="53" internalValue="" name="Подробное состояние прибора [53]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="54" internalValue="" name="Подробное состояние прибора [54]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="55" internalValue="" name="Подробное состояние прибора [55]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="56" internalValue="" name="Подробное состояние прибора [56]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="57" internalValue="" name="Подробное состояние прибора [57]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="58" internalValue="" name="Подробное состояние прибора [58]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="59" internalValue="" name="Подробное состояние прибора [59]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="60" internalValue="" name="Подробное состояние прибора [60]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="61" internalValue="" name="Подробное состояние прибора [61]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="62" internalValue="" name="Подробное состояние прибора [62]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="63" internalValue="" name="Подробное состояние прибора [63]" value="" unit="" />
+            <Param id="V_DetailedDeviceStatus" subindex="64" internalValue="" name="Подробное состояние прибора [64]" value="" unit="" />
+          </Parameters>
+        </Device>
+      </Devices>
+    </Device>
+  </Devices>
+</Linerecorder_MultiSensor>

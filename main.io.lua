@@ -1,7 +1,8 @@
 --version  = 1
+--Eplanner version = 2022.1.8075.18905
 ------------------------------------------------------------------------------
-PAC_name       = 'T1-PLCnext-Demo'
-PAC_id         = '28204'
+PAC_name = 'T1-PLCnext-Demo'
+PAC_id = '28204'
 ------------------------------------------------------------------------------
 --Узлы IO
 nodes =
@@ -26,6 +27,7 @@ nodes =
              { 2702072 },        --AXL F AI2 AO2 1H,
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
              { 1027843 },        --AXL F IOL8 2H,
+             { 1088132 },        --AXL SE IOL4,
             }
         },
     }
@@ -76,6 +78,25 @@ devices =
                 physical_port = 31,
                 logical_port  = 2,
                 module_offset = 4
+                },
+            },
+        par = {0 --[[P_DT]], 1000 --[[P_ERR]] }
+        },
+
+        {
+        name    = 'LS2',
+        descr   = '',
+        dtype   = 3,
+        subtype = 4, -- LS_IOLINK_MAX
+        article = 'IFM.LMT100',
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 0,
+                logical_port  = 1,
+                module_offset = 36
                 },
             },
         par = {0 --[[P_DT]], 1000 --[[P_ERR]] }
@@ -810,7 +831,7 @@ devices =
         name    = 'PT2',
         descr   = '',
         dtype   = 18,
-        subtype = 3, -- DEV_SPAE
+        subtype = 2, -- PT_IOLINK
         article = 'FES.8001446',
         AI =
             {

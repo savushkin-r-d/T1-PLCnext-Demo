@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Linerecorder_MultiSensor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ifm.com/datalink/LinerecorderSensor4">
+  <Version>1.9.4.88</Version>
+  <Devices>
+    <Device>
+      <Sensor>
+        <VendorId>176</VendorId>
+        <DeviceId>6918</DeviceId>
+        <ProductId>AXL SE IOL4</ProductId>
+      </Sensor>
+      <Parameters>
+        <Param id="V_PortConfig_01" subindex="" internalValue="0" name="Port1 mode" value="0" unit="" text="IO-Link" />
+        <Param id="V_PortConfig_02" subindex="" internalValue="3" name="Port2 mode" value="3" unit="" text="Disabled" />
+        <Param id="V_PortConfig_03" subindex="" internalValue="3" name="Port3 mode" value="3" unit="" text="Disabled" />
+        <Param id="V_PortConfig_04" subindex="" internalValue="3" name="Port4 mode" value="3" unit="" text="Disabled" />
+      </Parameters>
+      <Devices>
+        <Device>
+          <Sensor>
+            <VendorId>310</VendorId>
+            <DeviceId>304</DeviceId>
+            <ProductId>LMT100</ProductId>
+          </Sensor>
+          <Port>1</Port>
+          <Parameters>
+            <Param id="V_SP1" subindex="" internalValue="62" name="SP1" value="62" unit="%" />
+            <Param id="V_rP1" subindex="" internalValue="54" name="rP1" value="54" unit="%" />
+            <Param id="V_ou1" subindex="" internalValue="3" name="ou1" value="3" unit="" text="Hno / Hysteresis fct normally open" />
+            <Param id="V_SP2" subindex="" internalValue="62" name="SP2" value="62" unit="%" />
+            <Param id="V_rP2" subindex="" internalValue="54" name="rP2" value="54" unit="%" />
+            <Param id="V_ou2" subindex="" internalValue="4" name="ou2" value="4" unit="" text="Hnc / Hysteresis fct normally closed" />
+            <Param id="V_FOU1" subindex="" internalValue="4" name="FOU1" value="4" unit="" text="OFF" />
+            <Param id="V_VDMA-dr1" subindex="" internalValue="0" name="dr1" value="0,0" unit="s" />
+            <Param id="V_FOU2" subindex="" internalValue="4" name="FOU2" value="4" unit="" text="OFF" />
+            <Param id="V_VDMA-dr2" subindex="" internalValue="0" name="dr2" value="0,0" unit="s" />
+            <Param id="V_P-n" subindex="" internalValue="0" name="P-n" value="0" unit="" text="PnP" />
+            <Param id="V_dFo" subindex="" internalValue="0" name="dFo" value="0,0" unit="s" />
+            <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
+            <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
+          </Parameters>
+        </Device>
+      </Devices>
+    </Device>
+  </Devices>
+</Linerecorder_MultiSensor>
