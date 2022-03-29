@@ -135,7 +135,7 @@ sudo update-axcf2152
 
 ## Работа с проектом в среде PLCnext Engineer ##
 
-Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге - **p:\PTUSA projects\projects\T1_PLCNext_Demo\PLCnext\Ptusa.pcwef**.
+Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге - **p:\PTUSA projects\projects\T1_PLCNext_Demo\PLCnext\Ptusa.pcwex**.
 
 Открываем свойства проекта (двойной щелчок мышью по элементу дерева **Project**) - здесь мы видим текущие сетевые настройки для устройств проекта (контроллеров и узлов ввода\вывода).
 
@@ -248,7 +248,7 @@ sudo update-axcf2152
 
 - Скопировать данный файл с заменой в папку **PLCnext** необходимого проекта.
 
-- Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге **p:\PTUSA projects\projects\T1_PLCNext_Demo\PLCnext\Ptusa.pcwef**.
+- Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге **p:\PTUSA projects\projects\T1_PLCNext_Demo\PLCnext\Ptusa.pcwex**.
 
 - Переходим на вкладку с настройками контроллера (рисунок 12).
 
