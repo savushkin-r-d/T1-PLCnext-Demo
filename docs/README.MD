@@ -206,7 +206,7 @@ sudo update-axcf2152
 Пароль: Напечатан на контроллере.
 ```
 
-- Переходим на вкладку **Security** -> **User Authentication** и нажимаем на кнопку **Set Password** и задаем новый пароль для пользователя **admin** - **обратитесь к администратору**.
+- Переходим на вкладку **Security** -> **User Authentication** и нажимаем на кнопку **Set Password** и задаем новый пароль для пользователя **admin**:
 
 <p align="center">
 <img align="center" src="images/set_passwd.PNG" height="400">
