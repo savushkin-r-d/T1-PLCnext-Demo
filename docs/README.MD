@@ -317,7 +317,7 @@ passwd: password changed.
 
 - Откройте файл */etc/ssh/sshd_config* в подходящем редакторе **WinSCP**.
 
-- В разделе #Authentication: раскомментируйте закомментированную запись. #PermitRootLogin yes.
+- В разделе #Authentication: раскомментируйте запись: `#PermitRootLogin yes`.
 
 - Перезапустите службу SSH с помощью  *sudo /etc/init.d/sshd restart*
 
