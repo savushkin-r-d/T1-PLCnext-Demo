@@ -1,0 +1,148 @@
+{
+	"folders": [
+        {
+            "path": "."
+        },
+    ],
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Run project",
+                "type": "shell",
+                "command": "./bin/windows-default/Release/ptusa_main.exe",
+                "args": [
+                    "./main.plua",
+                    "path",
+                    "./",
+                    "sys_path",
+                    "./sys/"
+                ],
+                "options": {
+                    "cwd": "${fileDirname}"
+                },
+                "problemMatcher": [],
+                "group": "build",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared",
+                    "clear": true,
+                    "showReuseMessage": false
+                },
+                "dependsOrder": "sequence",
+                "dependsOn": [
+                    "z terminate project"
+                ]
+            },
+            {
+                "label": "Debug run project",
+                "type": "shell",
+                "command": "./bin/windows-default/Release/ptusa_main.exe",
+                "args": [
+                    "./main.plua",
+                    "path",
+                    "./",
+                    "sys_path",
+                    "./sys/",
+                    "debug"
+                ],
+                "options": {
+                    "cwd": "${fileDirname}"
+                },
+                "problemMatcher": [],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "shared",
+                    "clear": false,
+                    "showReuseMessage": false
+                },
+                "dependsOrder": "sequence",
+                "dependsOn": [
+                    "z terminate project"
+                ]
+            },
+            {
+                "label": "Test project",
+                "type": "shell",
+                "command": "busted",
+                "args": [
+                    "-e",
+                    "\\\"os.execute('chcp 65001')\\\"",
+                    "-e",
+                    "\\\"package.cpath = package.cpath..';./bin/windows-default/Release/?.dll'\\\"",
+                    "-v",
+                    "-o",
+                    "TAP",
+                    "./spec/ptusa_main.lua",
+                ],
+                "group": "build",
+                "presentation": {
+                    "showReuseMessage": false
+                },
+                "options": {
+                    "cwd": "${fileDirname}"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "z terminate project",
+                "type": "shell",
+                "command": "taskkill /IM ptusa_main.exe /F /FI 'STATUS eq RUNNING'",
+                "presentation": {
+                    "showReuseMessage": false
+                },
+                "options": {
+                    "cwd": "${fileDirname}"
+                }
+            }
+        ]
+    },
+    "settings": {
+        "files.exclude": {
+            "**/nvram.txt": true,
+            "**/.old": true,
+            "**/old": true,
+            "**/PLCnext": true,
+        },
+        "files.associations": {
+            "*.plua": "lua"
+        },
+        "files.encoding": "utf8",
+        "workbench.editor.labelFormat": "short",
+        "workbench.panel.defaultLocation": "right",
+        "trailing-spaces.trimOnSave": true,
+        "terminal.integrated.shell.windows": "powershell.exe",
+        "workbench.colorTheme": "Default Light+",
+        "editor.renderWhitespace": "boundary",
+        "editor.rulers": [
+            80
+        ],
+        "workbench.view.experimental.allowMovingToNewContainer": true,
+        "cSpell.words": [
+            "UINT",
+            "oper",
+            "skimmilk",
+            "автовключение",
+            "автоотключение"
+        ],
+    },
+    "extensions": {
+        "recommendations": [
+          "vikyd.vscode-fold-level",
+          "johnstoncode.svn-scm",
+          "liwangqian.luacoderassist",
+          "streetsidesoftware.code-spell-checker",
+          "streetsidesoftware.code-spell-checker-russian",
+          "ms-ceintl.vscode-language-pack-ru",
+          "shardulm94.trailing-spaces"
+        ]
+    }
+}
