@@ -390,20 +390,36 @@ sudo /etc/init.d/plcnext start
 
 ## Настройка устройств сопряжения с шиной *AXL F BK ETH*
 
-### Задание IP-адреса
+### Необходимо ознакомиться с протоколом [Startup+](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL).
 
-Необходимо ознакомиться с протоколом [BootP](https://ru.wikipedia.org/wiki/Bootstrap_Protocol).
+Скачать с сайта Phoenix Contact утилиту [Startup+ от Phoenix Contact](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL) для настройки. После запуска данной утилиты открывается главное окно и выбираем создать новый проект:
 
-Скачать с сайта Phoenix Contact утилиту [BootP IP addressing tool](https://www.phoenixcontact.com/online/portal/us/pxc/product_detail_page/!ut/p/z1/5Vddc6IwFP0r7oOPmPCNj0DdVYrWVtwKL5kAwc0uX4VoP359g2V3i7PV2en4BJMZEsi5955zOU4EAdiAIMd7usWMFjlO-doPNORZ3mSylDTx5la14OxKtSeucidOFxL4DgIQ1CQlESOxjRnZFtUz8E3XbV4wHAJfbGZlFP0C_lKQREGUmwcpDSvcbN3VJD_soDHwJc0wFHXcrItkadvXHQyjLCXAt3b1ICp2ZUqqgTAwN-7g68C6Hky8KV_-jnB_snKTF3Wa2BsefnCZ8Bze53gdGdK1Pf2miHNj4krwdj73PMtRrlxPAqt_qvBXsYpEhO5JxSM16lRFvIvYFWGYpvWMkWzWlevDHhzrWsZJVsSkDVvUtGl1Jwlfe-SJtc-OG8fxKc63O7xtYpyhKfaDptwLmjLsB81-eFPuhzflfnjT6Yc3nX540-nJR9uPnyBL4TR9G_ja9sd0tgUOCGiYjR6jbARH5VM0ajOi-MALlU1QfvKmPx8eAhMEUZGzppJNI88QPpJwCDNM-bQF1kOY0podgHxuF1lZ5CRnNUqKCi1dG-E8RrMbVD_XXLMatUSGUB7HsaJiKESiQgRFlaAQEknnMy3WtURMdB3zo3Bw8rRriu2GE6flFcnReoWWG3u9OiPXWAH3e0oewTovqoz_CVm9daDpYDIOeb0GFBKVM1BEVRRwPFYEAommxpDoiT4GU3gug_bJDGfCqxcNv7xsePWy4qj6RcO7n63eOfmpu8pnjBl1jVmm0cGYtPhjzPK_jFlmmSG3Q1hvXjwSvrwfybv3bwMtFuq-MwTcxZDQgPIRTC33R7ALphKCULsz5hNZ8Z39i7UQurfAN7-8AlmIudU!/p0/IZ7_82KCHG41M8EL20QMMTTBJ4DLJ0=CZ6_TBTEEP261OQ5B0ID5CEL4R1HN2=LA0=EdownloadId!4009557=action!downloadFile==/#Z7_82KCHG41M8EL20QMMTTBJ4DLJ0) для настройки. После запуска данной утилиты открывается главное окно:
+![запуск](images/main_startup.png)
+<p align="center"> Рисунок 19 - Запуск утилиты</p>
 
+В следующем окне выбираем модель баскаплера (Указана на корпусе устройства):
 
-Далее в списке обнаруженных устройств (посылающих запрос BootP) необходимо выбрать требуемое (MAC адрес устройства должен соответствовать MAC адресу, который напечатан на корпусе настраиваемого узла BK ETH). Через двойной клик по необходимому устройству переходим к окну настройки:
+![выбор](images/model_AXLFBKETH.png)
+<p align="center"> Рисунок 20 - Выбор модели баскаплера</p>
 
-![настройка](images/IP_assign_set.png)
-<p align="center"> Рисунок 20 - Настройка сетевых параметров</p>
+Жмём **Next** и выбираем тип подключения. В нашем случае Ethernet:
+
+![настройка](images/Sellect_the_type_of_connection.png)
+<p align="center"> Рисунок 21 - Настройка сетевых параметров</p>
+
+Далее выбираем пункт *Найти устройство в сети и задать IP adress*:
+
+![настройка](images/Assign_an_IP.png)
+<p align="center"> Рисунок 22 - Настройка сетевых параметров</p>
+
+Далее в списке обнаруженных устройств (посылающих запрос) необходимо выбрать требуемое (MAC адрес устройства должен соответствовать MAC адресу, который напечатан на корпусе настраиваемого узла BK ETH). Через двойной клик по необходимому устройству переходим к окну настройки:
+
+![меню](images/IP_assign_set.png)
+<p align="center"> Рисунок 23 - Настройка сетевых параметров</p>
 
 Задаем требуемые настройки и записываем их в устройство.
 
-![общий вид](images/CIP_default_AXL_F_bus.jpg)
-<p align="center"> Рисунок 20 - Общий вид</p>
+Общий вид подключения:
 
+![общий вид](images/CIP_default_AXL_F_bus.jpg)
+<p align="center"> Рисунок 24 - Общий вид</p>
