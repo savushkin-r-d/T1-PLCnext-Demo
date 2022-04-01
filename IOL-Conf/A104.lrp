@@ -27,11 +27,11 @@
           </Sensor>
           <Port>1</Port>
           <Parameters>
-            <Param id="V_FOU2" subindex="" internalValue="4" name="FOU2" value="4" unit="" text="OFF" />
+            <Param id="V_FOU2" subindex="" internalValue="2" name="FOU2" value="2" unit="" text="OFF" />
             <Param id="V_Uni" subindex="" internalValue="0" name="uni" value="0" unit="" text="°C" />
             <Param id="V_OU2" subindex="" internalValue="1" name="ou2" value="1" unit="" text="I / Analog signal 4…20 mA" />
             <Param id="V_ASP2" subindex="" internalValue="0" name="ASP2" value="0,0" unit="°C" />
-            <Param id="V_AEP2" subindex="" internalValue="2000" name="AEP2" value="200,0" unit="°C" />
+            <Param id="V_AEP2" subindex="" internalValue="1005" name="AEP2" value="100.5" unit="°C" />
             <Param id="V_COF" subindex="" internalValue="0" name="coF" value="0,0" unit="°C" />
             <Param id="V_DeviceAccessLocks" subindex="2" internalValue="0" name="Блокировки доступа к прибору. Хранилище данных" value="0" unit="" text="Разблокирован" />
             <Param id="V_ApplicationSpecificTag" subindex="" internalValue="***" name="Специфичный для приложения тег" value="***" unit="" />
@@ -181,7 +181,7 @@
             <Param id="V_coFU_TEMP" subindex="" internalValue="0" name="Offset - TEMP" value="0,0" unit="K" />
             <Param id="V_uni-T" subindex="" internalValue="0" name="uni.T" value="0" unit="" text="°C" />
             <Param id="V_T-Cmp" subindex="" internalValue="200" name="T.Cmp" value="2,00" unit="%" />
-            <Param id="V_rEF-T" subindex="" internalValue="250" name="rEF.T" value="25,0" unit="°C" />
+            <Param id="V_rEF-T" subindex="" internalValue="200" name="rEF.T" value="20" unit="°C" />
             <Param id="V_CGA" subindex="" internalValue="1000" name="CGA" value="100,0" unit="%" />
             <Param id="V_MDC1Descr" subindex="1" internalValue="0" name="MDC 1 Descr. Lower limit" value="0" unit="" text="0" />
             <Param id="V_MDC1Descr" subindex="2" internalValue="15000" name="MDC 1 Descr. Upper limit" value="15000" unit="" text="15000" />

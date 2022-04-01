@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.1.8075.18905
+--Eplanner version = 2022.2.8082.20736
 ------------------------------------------------------------------------------
 PAC_name = 'T1-PLCnext-Demo'
 PAC_id = '28204'
@@ -11,7 +11,7 @@ nodes =
         name    = 'A1',
         ntype   = 201, --AXC F 2152
         n       = 1,
-        IP      = '192.168.1.10',
+        IP      = '10.0.16.73',
         modules =
             {
             }
@@ -20,7 +20,7 @@ nodes =
         name    = 'A100',
         ntype   = 200, --AXL F BK ETH
         n       = 2,
-        IP      = '192.168.1.11',
+        IP      = '10.0.16.74',
         modules =
             {
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
@@ -119,6 +119,14 @@ devices =
                 },
             },
         par = {0 --[[P_C0]], 1000 --[[P_ERR]] }
+        },
+
+        {
+        name    = 'GS1',
+        descr   = '',
+        dtype   = 6,
+        subtype = 2, -- GS_VIRT
+        article = 'PXC.1191993',
         },
 
         {
@@ -844,6 +852,14 @@ devices =
                 },
             },
         par = {1000 --[[P_ERR]] }
+        },
+
+        {
+        name    = 'F1',
+        descr   = '',
+        dtype   = 19,
+        subtype = 2, -- F_VIRT
+        article = 'IFM.LDL100',
         },
 
         {
