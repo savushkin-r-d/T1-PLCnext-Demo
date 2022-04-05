@@ -11,7 +11,7 @@ nodes =
         name    = 'A1',
         ntype   = 201, --AXC F 2152
         n       = 1,
-        IP      = '192.168.1.10',
+        IP      = '10.0.16.73',
         modules =
             {
             }
@@ -20,7 +20,7 @@ nodes =
         name    = 'A100',
         ntype   = 200, --AXL F BK ETH
         n       = 2,
-        IP      = '192.168.1.11',
+        IP      = '10.0.16.74',
         modules =
             {
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
