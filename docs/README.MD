@@ -246,7 +246,7 @@ sudo update-axcf2152
 
 - Скопировать данный файл с заменой в папку **PLCnext** необходимого проекта.
 
-- Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге **p:\PTUSA projects\projects\T1_PLCNext_Demo\PLCnext\Ptusa.pcwex**.
+- Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге **PLCnext Engineer\T1-PLCNext-Demo.pcwex**.
 
 - Переходим на вкладку с настройками контроллера (рисунок 12).
 
