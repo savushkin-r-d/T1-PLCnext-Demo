@@ -235,8 +235,6 @@ sudo update-axcf2152
 
 - Авторизуйтесь как администратор (**admin - обратитесь к администратору**).
 
-- Перейдите в **/opt/plcnext/projects/PCWE/Libs/Ptusa** каталог (команда: *cd /opt/plcnext/projects/PCWE/Libs/Ptusa*).
-
 - Перезапустите службу **plcnext** (команда: **sudo /etc/init.d/plcnext restart**).
 
 
