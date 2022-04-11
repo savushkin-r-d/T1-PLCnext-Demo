@@ -20,7 +20,7 @@ nodes =
         name    = 'A100',
         ntype   = 200, --AXL F BK ETH
         n       = 2,
-        IP      = '10.0.16.74',
+        IP      = '192.168.1.11',
         modules =
             {
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
