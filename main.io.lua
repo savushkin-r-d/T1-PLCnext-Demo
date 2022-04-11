@@ -11,7 +11,7 @@ nodes =
         name    = 'A1',
         ntype   = 201, --AXC F 2152
         n       = 1,
-        IP      = '10.0.16.73',
+        IP      = '192.168.1.10',
         modules =
             {
             }
