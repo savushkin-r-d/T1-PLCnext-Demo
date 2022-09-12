@@ -1,0 +1,56 @@
+name: CI
+
+# Controls when the action will run.
+on: [pull_request, workflow_dispatch]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+            # Whether to checkout submodules: `true` to checkout submodules or `recursive` to
+            # recursively checkout submodules.
+            #
+            # When the `ssh-key` input is not provided, SSH URLs beginning with
+            # `git@github.com:` are converted to HTTPS.
+            #
+            # Default: false
+            lfs: true
+            submodules: 'recursive'
+            token: ${{ secrets.SYS_SCRIPTS_ACTIONS_PAT }} # `GitHub_PAT` is a secret that contains your PAT 
+
+      - name: Install Lua/LuaJIT
+        # You may pin to the exact commit or the version.
+        # uses: leafo/gh-actions-lua@ea0ae38722c0b45aa4e770f7c4a650c6b26800d0
+        uses: leafo/gh-actions-lua@v8.0.0
+        with:
+          # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
+          luaVersion: 5.1
+          # Command line flags passed to make when building Lua
+          #luaCompileFlags: # optional
+
+      - name: Install LuaRocks
+        # You may pin to the exact commit or the version.
+        # uses: leafo/gh-actions-luarocks@218573cd14f9a47b079c9b89349f9b71cb5ee706
+        uses: leafo/gh-actions-luarocks@v4.0.0
+        #with:
+          # The version of LuaRocks to install, must be available on https://luarocks.github.io/luarocks/releases/
+          #luaRocksVersion: # optional, default is 3.3.1
+
+      # Install busted
+      - name: Install busted
+        run: luarocks install busted
+
+      - name: Make link to ptusa_main.so
+        run: ln ./bin/linux-default/Release/ptusa_main.so .luarocks/lib/lua/5.1/ptusa_main.so         
+
+        # Runs test
+      - name: Run test
+        run: lua ./spec/ptusa_main.lua -v
