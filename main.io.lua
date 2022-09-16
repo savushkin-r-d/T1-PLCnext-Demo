@@ -122,6 +122,14 @@ devices =
         },
 
         {
+        name    = 'GS1',
+        descr   = '',
+        dtype   = 6,
+        subtype = 2, -- GS_VIRT
+        article = 'IFM.LMT100',
+        },
+
+        {
         name    = 'FQT1',
         descr   = '',
         dtype   = 7,

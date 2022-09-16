@@ -14,6 +14,7 @@ local prg =
         LS1 = LS('LS1'),
         LS2 = LS('LS2'),
         TE1 = TE('TE1'),
+        GS1 = GS('GS1'),
         FQT1 = FQT('FQT1'),
         QT1 = QT('QT1'),
         A2HL1 = HL('A2HL1'),
