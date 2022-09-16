@@ -48,7 +48,6 @@ local prg =
         A5DI6 = DI('A5DI6'),
         A5DI7 = DI('A5DI7'),
         A5DI8 = DI('A5DI8'),
-        DO10 = DO('DO10'),
         A3AI1 = AI('A3AI1'),
         A3AI2 = AI('A3AI2'),
         A3AO1 = AO('A3AO1'),

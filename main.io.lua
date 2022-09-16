@@ -752,14 +752,6 @@ devices =
         },
 
         {
-        name    = 'DO10',
-        descr   = '',
-        dtype   = 14,
-        subtype = 2, -- DO_VIRT
-        article = '',
-        },
-
-        {
         name    = 'A3AI1',
         descr   = '',
         dtype   = 15,
