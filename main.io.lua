@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.2.8082.20736
+--Eplanner version = 2022.8.8251.20557
 ------------------------------------------------------------------------------
 PAC_name = 'T1-PLCnext-Demo'
 PAC_id = '28204'
@@ -126,7 +126,26 @@ devices =
         descr   = '',
         dtype   = 6,
         subtype = 2, -- GS_VIRT
-        article = 'PXC.1191993',
+        article = 'IFM.LMT100',
+        },
+
+        {
+        name    = 'FQT1',
+        descr   = '',
+        dtype   = 7,
+        subtype = 5, -- FQT_IOLINK
+        article = 'FES.542582',
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 40,
+                physical_port = 12,
+                logical_port  = 4,
+                module_offset = 36
+                },
+            },
+        par = {0 --[[P_C0]], 5 --[[P_DT]], 0 --[[P_ERR_MIN_FLOW]] }
         },
 
         {
@@ -858,8 +877,28 @@ devices =
         name    = 'F1',
         descr   = '',
         dtype   = 19,
-        subtype = 2, -- F_VIRT
-        article = 'IFM.LDL100',
+        subtype = 1, -- F
+        article = 'IFM.LMT100',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 20,
+                physical_port = 73,
+                logical_port  = 8,
+                module_offset = 4
+                },
+            },
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 20,
+                physical_port = 73,
+                logical_port  = 8,
+                module_offset = 4
+                },
+            },
         },
 
         {
