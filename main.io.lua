@@ -82,7 +82,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                1,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -128,7 +128,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                11,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -151,7 +151,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                12,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -174,7 +174,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                13,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -197,7 +197,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                14,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -220,7 +220,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                15,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -243,7 +243,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                16,     --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -266,7 +266,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                2,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -289,7 +289,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                3,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -312,7 +312,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                4,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -335,7 +335,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                5,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -358,7 +358,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                6,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -381,7 +381,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                7,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -404,7 +404,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                8,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
@@ -427,7 +427,7 @@ devices =
             },
         rt_par = 
                 {
-                10,     --R_VTUG_NUMBER
+                9,      --R_VTUG_NUMBER
                 1,      --R_VTUG_SIZE
                 },
         },
