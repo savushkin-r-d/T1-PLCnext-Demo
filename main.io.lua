@@ -68,8 +68,8 @@ devices =
         name    = 'V2',
         descr   = '',
         dtype   = 0,
-        subtype = 15, -- V_IOLINK_MIXPROOF
-        article = 'AL.9615-4003-06',
+        subtype = 16, -- V_IOLINK_DO1_DI2
+        article = 'DEF.SORIO-1SV',
         AO =
             {
                 {
