@@ -460,35 +460,41 @@ Easy Server находится в папке P:\Monitor\EasyServer.
 
 - В появившемся окне нажимаем "Настройки сервера".
 
-![проект](images/monitor.png)
-<p align="center"> Рис 9. Настройка сервера </p>
+<p align="center">
+<img align="center" src="images/Monitor.png"> </p>
+<p align="center"> Рисунок 25 - Настройка сервера </p>
 
 - Прописываем путь P:\Monitor\ChBase.
 
-![проект](images/server_path.png)
-<p align="center"> Рис 10. Настройка пути к базе каналов </p>
+<p align="center">
+<img align="center" src="images/Server_path.png"> </p>
+<p align="center"> Рисунок 26 - Настройка пути к базе каналов </p>
 
 - Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
 
-![проект](images/add_project.png)
-<p align="center"> Рис 11. Настройка проекта </p>
+<p align="center">
+<img align="center" src="images/Add_project.png"> </p>
+<p align="center"> Рисунок 27 - Настройка проекта </p>
 
 - Далее переходим во вкладку "Настройка базы каналов" и доваляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
 
-![проект](images/add_channel.png)
-<p align="center"> Рис 11. Настройка проекта </p>
+<p align="center">
+<img align="center" src="images/Add_channel.png"> </p>
+<p align="center"> Рисунок 28 - Настройка проекта </p>
 
 - После добавления необходимых файлов нажимаем кнопку "Ok".
 
 - Далее переходим на вкладку "База каналов".
 
-![проект](images/server_channel_base.png)
-<p align="center"> Рис 12. Настройка базы каналов </p>
+<p align="center">
+<img align="center" src="images/Server_channel_base.png"> </p>
+<p align="center"> Рисунок 29 - Настройка базы каналов </p>
 
 - Загружаем файл базы каналов. Файл находится в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
 
-![проект](images/create_channel_base.png)
-<p align="center"> Рис 13. Настройка базы каналов </p>
+<p align="center">
+<img align="center" src="images/Create_channel_base.png"> </p>
+<p align="center"> Рисунок 30 - Настройка базы каналов </p>
 
 - На этом настройка EasyServer закончена.
 
@@ -500,15 +506,17 @@ Easy Server находится в папке P:\Monitor\EasyServer.
 
 - В меню нажимаем открыть драйвер.
 
-![проект](images/add_driver.png)
-<p align="center"> Рис 14. Добавление драйвера </p>
+<p align="center">
+<img align="center" src="images/Add_driver.png"> </p>
+<p align="center"> Рисунок 31 - Добавление драйвера </p>
 
 - Выбираем файл в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
 - Далее выбираем в "Устройствах" "T1_PLCNext_Demo" и изменяеем IP адрес.
 
-![проект](images/ip.png)
-<p align="center"> Рис 15. Изменение IP адреса </p>
+<p align="center">
+<img align="center" src="images/IP.png"> </p>
+<p align="center"> Рисунок 32 - Изменение IP адреса </p>
 
 - Далее нажимаем "Ок" и "Применить".
 
@@ -521,8 +529,9 @@ Monitor находится в папке P:\Monitor
 
 - В появившемся окне заполнить данные которые указаны на рисунке 8 и нажать "Ок".
 
-![проект](images/connect_to_server.png)
-<p align="center"> Рис 16. Подключение к серверу </p>
+<p align="center">
+<img align="center" src="images/Connect_to_server.png"> </p>
+<p align="center"> Рисунок 33 - Подключение к серверу </p>
 
 ## После выполнения всех шагов необходимо:
 - собрать проект T1_PLCNext_Demo в Visual Studio Code.
