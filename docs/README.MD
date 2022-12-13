@@ -214,7 +214,7 @@ sudo update-axcf2152
 
 Последняя версия библиотеки находится [здесь](https://github.com/savushkin-r-d/ptusa_main/releases).
 
-### Обновление библиотеки через командную оболочку 
+### Обновление библиотеки через командную оболочку
 
 Для обновления библиотеки через командную оболочку необходимо:
 
@@ -411,3 +411,131 @@ sudo /etc/init.d/plcnext start
 
 ![общий вид](images/CIP_default_AXL_F_bus.jpg)
 <p align="center"> Рисунок 24 - Общий вид</p>
+
+# Запуск в режиме симуляции (эмулятор "на столе")
+
+ # Содержание
+ 1. [Клонирование проекта](#Клонирование-проекта)
+ 2. [Установка Visual Studio Code](#Установка-Visual-Studio-Code)
+ 3. [Установка Git LFS](#Установка-Git-LFS)
+ 4. [Установка и настройка Easy Server](#Установка-и-настройка-Easy-Server)
+ 5. [Настройка DbEditorXML](#Настройка-DbEditorXML)
+ 6. [Установка и настройка Monitor](#Установка-и-настройка-Monitor)
+
+ ## При установке компонентов на компьютере, не подключённом к сети, необходимо скачать все необходимые компоненты (такие как: EasyServer, Monitor) с USB устройства.
+
+ ## Клонирование проекта
+
+ Проект T1_PLCNext_Demo находится [здесь](https://github.com/savushkin-r-d/T1-PLCnext-Demo).
+
+ ## Установка Visual Studio Code
+
+ Последняя версия Visual Studio Code находится [здесь](https://code.visualstudio.com/download).
+
+ Чтобы установить Visual Studio Code, выполните следующие действия:
+
+ - Скачайте файл прошивки формата *.exe последней версии с сайта.
+
+ - Запустите файл установки *.exe.
+
+ - Следуйте инструкциям мастера установки.
+
+ ### Установка Git LFS
+
+ Последняя версия Git LFS находится [здесь](https://git-lfs.github.com/).
+
+ Чтобы установить Git LFS, выполните следующие действия:
+
+ - Скачайте файл прошивки формата *.exe последней версии с сайта.
+
+ - Запустите файл установки *.exe.
+
+ - Следуйте инструкциям мастера установки.
+
+ ## Установка и настройка EasyServer
+
+ Easy Server находится в папке P:\Monitor\EasyServer.
+
+ - Необходимо запустить файл EasyServer.exe
+
+ - В появившемся окне нажимаем "Настройки сервера".
+
+ <p align="center">
+ <img align="center" src="images/monitor.png"> </p>
+ <p align="center"> Рисунок 25 - Настройка сервера </p>
+
+ - Прописываем путь P:\Monitor\ChBase.
+
+ <p align="center">
+ <img align="center" src="images/server_path.png"> </p>
+ <p align="center"> Рисунок 26 - Настройка пути к базе каналов </p>
+
+ - Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
+
+ <p align="center">
+ <img align="center" src="images/add_project.png"> </p>
+ <p align="center"> Рисунок 27 - Настройка проекта </p>
+
+ - Далее переходим во вкладку "Настройка базы каналов" и доваляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
+
+ <p align="center">
+ <img align="center" src="images/add_channel.png"> </p>
+ <p align="center"> Рисунок 28 - Настройка проекта </p>
+
+ - После добавления необходимых файлов нажимаем кнопку "Ok".
+
+ - Далее переходим на вкладку "База каналов".
+
+ <p align="center">
+ <img align="center" src="images/server_channel_base.png"> </p>
+ <p align="center"> Рисунок 29 - Настройка базы каналов </p>
+
+ - Загружаем файл базы каналов. Файл находится в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
+
+ <p align="center">
+ <img align="center" src="images/create_channel_base.png"> </p>
+ <p align="center"> Рисунок 30 - Настройка базы каналов </p>
+
+ - На этом настройка EasyServer закончена.
+
+ ## DbEditorXML
+
+ - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
+
+ - В папке P:\Monitor запускаем файл * DbEditorXML.exe
+
+ - В меню нажимаем открыть драйвер.
+
+ <p align="center">
+ <img align="center" src="images/add_driver.png"> </p>
+ <p align="center"> Рисунок 31 - Добавление драйвера </p>
+
+ - Выбираем файл в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
+
+ - Далее выбираем в "Устройствах" "T1_PLCNext_Demo" и изменяеем IP адрес.
+
+ <p align="center">
+ <img align="center" src="images/ip.png"> </p>
+ <p align="center"> Рисунок 32 - Изменение IP адреса </p>
+
+ - Далее нажимаем "Ок" и "Применить".
+
+ - После этого в папке P:\Monitor запускаем приложение * Bugger.exe нажимаем "Показать"и проверяем успешно ли загружен сервер.
+ ## Установка и настройка Monitor
+
+ Monitor находится в папке P:\Monitor
+
+ - Необходимо запустить файл * Monotior.exe.
+
+ - В появившемся окне заполнить данные которые указаны на рисунке 8 и нажать "Ок".
+
+ <p align="center">
+ <img align="center" src="images/connect_to_server.png"> </p>
+ <p align="center"> Рисунок 33 - Подключение к серверу </p>
+
+ ## После выполнения всех шагов необходимо:
+ - собрать проект T1_PLCNext_Demo в Visual Studio Code.
+ - запустить EasyServer.
+ - запустить Monitor.
+
+ ## В Monitor будут видны все утройства проекта тестового стенда T1_PLCNext_Demo с возможностью упраления.
