@@ -503,8 +503,6 @@ sudo /etc/init.d/plcnext start
  <img align="center" src="images/open_project.png"> </p>
  <p align="center"> Рисунок 31 - Открытие проекта в EasyServer </p>
 
- 
-
  ## DbEditorXML
 
  - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
@@ -542,7 +540,8 @@ sudo /etc/init.d/plcnext start
  <p align="center"> Рисунок 34 - Подключение к серверу </p>
 
  ## После выполнения всех шагов необходимо:
- - запустить и собрать проект T1_PLCNext_Demo в Visual Studio Code (для сборки проекта необходимо в верхнем меню Visual Studio Code нажать "Терминал / Запустить задачу сборки" либо использовать сочетание клавиш "CTL + SHIFT + B")
+
+ - запустить и собрать проект T1_PLCNext_Demo в Visual Studio Code (для сборки проекта следует создать рабочую облать проекта и установить все необходимые расширения, затем в верхнем меню Visual Studio Code нажать "Терминал / Запустить задачу сборки" либо использовать сочетание клавиш "CTL + SHIFT + B").
  - запустить EasyServer.
  - запустить Monitor.
 
