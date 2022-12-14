@@ -536,7 +536,7 @@ sudo /etc/init.d/plcnext start
 
  - Необходимо запустить файл Monotior.exe.
 
- - В появившемся окне заполнить данные которые указаны на рисунке 8 и нажать "Ок".
+ - В появившемся окне заполнить данные которые указаны на рисунке 33 и нажать "Ок".
 
  <p align="center">
  <img align="center" src="images/connect_to_server.png"> </p>
