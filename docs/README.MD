@@ -422,7 +422,9 @@ sudo /etc/init.d/plcnext start
  5. [Настройка DbEditorXML](#Настройка-DbEditorXML)
  6. [Установка и настройка Monitor](#Установка-и-настройка-Monitor)
 
- ## При установке компонентов на компьютере, не подключённом к сети, необходимо скачать все необходимые компоненты (такие как: EasyServer, Monitor) с USB устройства.
+ ## Для всех компонентов следует создать на компьютере новый диск (P) и разместить их в нём.
+
+ ## Все необходимые компоненты (такие как: EasyServer, Monitor) нужно скачать с USB устройства.
 
  ## Клонирование проекта
 
@@ -458,13 +460,13 @@ sudo /etc/init.d/plcnext start
 
  - Необходимо запустить файл EasyServer.exe
 
- - В появившемся окне нажимаем "Настройки сервера".
+ - В появившемся окне нажимаем "Настройки сервера"
 
  <p align="center">
  <img align="center" src="images/monitor.png"> </p>
  <p align="center"> Рисунок 25 - Настройка сервера </p>
 
- - Прописываем путь P:\Monitor\ChBase.
+ - Прописываем путь P:\Monitor\ChBase
 
  <p align="center">
  <img align="center" src="images/server_path.png"> </p>
@@ -496,45 +498,52 @@ sudo /etc/init.d/plcnext start
  <img align="center" src="images/create_channel_base.png"> </p>
  <p align="center"> Рисунок 30 - Настройка базы каналов </p>
 
+ - Далее открываем проект. Файл находится в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
+
+ <p align="center">
+ <img align="center" src="images/open_project.png"> </p>
+ <p align="center"> Рисунок 31 - Открытие проекта в EasyServer </p>
+
  - На этом настройка EasyServer закончена.
 
  ## DbEditorXML
 
  - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
 
- - В папке P:\Monitor запускаем файл * DbEditorXML.exe
+ - В папке P:\Monitor запускаем файл DbEditorXML.exe
 
  - В меню нажимаем открыть драйвер.
 
  <p align="center">
  <img align="center" src="images/add_driver.png"> </p>
- <p align="center"> Рисунок 31 - Добавление драйвера </p>
+ <p align="center"> Рисунок 32 - Добавление драйвера </p>
 
  - Выбираем файл в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
- - Далее выбираем в "Устройствах" "T1_PLCNext_Demo" и изменяеем IP адрес.
+ - Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и изменяеем IP адрес на 127.0.0.1. Это необходимо для локального подключения.
 
  <p align="center">
  <img align="center" src="images/ip.png"> </p>
- <p align="center"> Рисунок 32 - Изменение IP адреса </p>
+ <p align="center"> Рисунок 33 - Изменение IP адреса </p>
 
  - Далее нажимаем "Ок" и "Применить".
 
- - После этого в папке P:\Monitor запускаем приложение * Bugger.exe нажимаем "Показать"и проверяем успешно ли загружен сервер.
+ - После этого в папке P:\Monitor запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем успешно ли загружен сервер.
+
  ## Установка и настройка Monitor
 
  Monitor находится в папке P:\Monitor
 
- - Необходимо запустить файл * Monotior.exe.
+ - Необходимо запустить файл Monotior.exe.
 
  - В появившемся окне заполнить данные которые указаны на рисунке 8 и нажать "Ок".
 
  <p align="center">
  <img align="center" src="images/connect_to_server.png"> </p>
- <p align="center"> Рисунок 33 - Подключение к серверу </p>
+ <p align="center"> Рисунок 34 - Подключение к серверу </p>
 
  ## После выполнения всех шагов необходимо:
- - собрать проект T1_PLCNext_Demo в Visual Studio Code.
+ - запустить и собрать проект T1_PLCNext_Demo в Visual Studio Code (для сборки проекта необходимо в верхнем меню Visual Studio Code нажать "Терминал / Запустить задачу сборки" либо использовать сочетание клавиш "CTL + SHIFT + B")
  - запустить EasyServer.
  - запустить Monitor.
 
