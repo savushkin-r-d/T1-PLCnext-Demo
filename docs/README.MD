@@ -456,7 +456,7 @@ sudo /etc/init.d/plcnext start
 
  ## Установка и настройка EasyServer
 
- Easy Server находится в папке P:\Monitor\EasyServer.
+ Easy Server находится в папке P:\Monitor\EasyServer.exe
 
  - Необходимо запустить файл EasyServer.exe
 
