@@ -454,56 +454,6 @@ sudo /etc/init.d/plcnext start
 
  - Следуйте инструкциям мастера установки.
 
- ## Установка и настройка EasyServer
-
- Easy Server находится в папке P:\Monitor\EasyServer.exe
-
- - Необходимо запустить файл EasyServer.exe
-
- - В появившемся окне нажимаем "Настройки сервера"
-
- <p align="center">
- <img align="center" src="images/monitor.png"> </p>
- <p align="center"> Рисунок 25 - Настройка сервера </p>
-
- - Прописываем путь P:\Monitor\ChBase
-
- <p align="center">
- <img align="center" src="images/server_path.png"> </p>
- <p align="center"> Рисунок 26 - Настройка пути к базе каналов </p>
-
- - Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
-
- <p align="center">
- <img align="center" src="images/add_project.png"> </p>
- <p align="center"> Рисунок 27 - Настройка проекта </p>
-
- - Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
-
- <p align="center">
- <img align="center" src="images/add_channel.png"> </p>
- <p align="center"> Рисунок 28 - Настройка проекта </p>
-
- - После добавления необходимых файлов нажимаем кнопку "Ok".
-
- - Далее переходим на вкладку "База каналов".
-
- <p align="center">
- <img align="center" src="images/server_channel_base.png"> </p>
- <p align="center"> Рисунок 29 - Настройка базы каналов </p>
-
- - Загружаем файл базы каналов. Файл находится в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
-
- <p align="center">
- <img align="center" src="images/create_channel_base.png"> </p>
- <p align="center"> Рисунок 30 - Настройка базы каналов </p>
-
- - Далее открываем проект. Файл находится в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
-
- <p align="center">
- <img align="center" src="images/open_project.png"> </p>
- <p align="center"> Рисунок 31 - Открытие проекта в EasyServer </p>
-
  ## Настройка DbEditorXML
 
  - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
@@ -514,7 +464,7 @@ sudo /etc/init.d/plcnext start
 
  <p align="center">
  <img align="center" src="images/add_driver.png"> </p>
- <p align="center"> Рисунок 32 - Добавление драйвера </p>
+ <p align="center"> Рисунок 25 - Добавление драйвера </p>
 
  - Выбираем файл в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
@@ -522,11 +472,61 @@ sudo /etc/init.d/plcnext start
 
  <p align="center">
  <img align="center" src="images/ip.png"> </p>
- <p align="center"> Рисунок 33 - Изменение IP адреса </p>
+ <p align="center"> Рисунок 26 - Изменение IP адреса </p>
 
  - Далее нажимаем "Ок" и "Применить".
 
  - После этого в папке P:\Monitor запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
+
+ ## Установка и настройка EasyServer
+
+ Easy Server находится в папке P:\Monitor\EasyServer.exe
+
+ - Необходимо запустить файл EasyServer.exe
+
+ - В появившемся окне нажимаем "Настройки сервера"
+
+ <p align="center">
+ <img align="center" src="images/monitor.png"> </p>
+ <p align="center"> Рисунок 27 - Настройка сервера </p>
+
+ - Прописываем путь P:\Monitor\ChBase
+
+ <p align="center">
+ <img align="center" src="images/server_path.png"> </p>
+ <p align="center"> Рисунок 28 - Настройка пути к базе каналов </p>
+
+ - Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
+
+ <p align="center">
+ <img align="center" src="images/add_project.png"> </p>
+ <p align="center"> Рисунок 29 - Настройка проекта </p>
+
+ - Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
+
+ <p align="center">
+ <img align="center" src="images/add_channel.png"> </p>
+ <p align="center"> Рисунок 30 - Настройка проекта </p>
+
+ - После добавления необходимых файлов нажимаем кнопку "Ok".
+
+ - Далее переходим на вкладку "База каналов".
+
+ <p align="center">
+ <img align="center" src="images/server_channel_base.png"> </p>
+ <p align="center"> Рисунок 31 - Настройка базы каналов </p>
+
+ - Загружаем файл базы каналов. Файл находится в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx
+
+ <p align="center">
+ <img align="center" src="images/create_channel_base.png"> </p>
+ <p align="center"> Рисунок 32 - Настройка базы каналов </p>
+
+ - Далее открываем проект. Файл находится в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr
+
+ <p align="center">
+ <img align="center" src="images/open_project.png"> </p>
+ <p align="center"> Рисунок 33 - Открытие проекта в EasyServer </p>
 
  ## Установка и настройка Monitor
 
@@ -545,11 +545,11 @@ sudo /etc/init.d/plcnext start
 Описание управляющей программы реализовано в виде Lua-скриптов.
 
 Для запуска сначала необходимо открыть папку проекта в редакторе на своей локальной рабочей машине.
-Используем редактор Visual Studio Code. 
+Используем редактор Visual Studio Code.
 
-- Открываем папку проекта- "P:\PTUSA-projects\T1_PLCNext_Demo" 
+- Открываем папку проекта - "P:\PTUSA-projects\T1_PLCNext_Demo"
 
-Для тестирования проекта в меню сверху выбираем "Файл"->"Открыть рабочую область из файла"-> "Выбираем файл рабочей области: ( _P:\PTUSA-projects\T1_PLCNext_Demo\project.code-workspace_)".
+Для тестирования проекта в меню сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_P:\PTUSA-projects\T1_PLCNext_Demo\project.code-workspace_)".
 
 - Тестирование проекта в VS Code осуществляется несколькими способами:
 
@@ -565,7 +565,8 @@ sudo /etc/init.d/plcnext start
 
 3. Закрыть редактор VS-Code.
 
- - запустить EasyServer.
- - запустить Monitor.
+Запустить EasyServer.
+
+Запустить Monitor.
 
 В Monitor будут видны все устройства проекта тестового стенда T1_PLCNext_Demo с возможностью управления.
