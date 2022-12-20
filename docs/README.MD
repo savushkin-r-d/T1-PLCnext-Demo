@@ -418,8 +418,8 @@ sudo /etc/init.d/plcnext start
  1. [Клонирование проекта](#Клонирование-проекта)
  2. [Установка Visual Studio Code](#Установка-Visual-Studio-Code)
  3. [Установка Git LFS](#Установка-Git-LFS)
- 4. [Установка и настройка EasyServer](#Установка-и-настройка-EasyServer)
- 5. [Настройка DbEditorXML](#Настройка-DbEditorXML)
+ 4. [Настройка DbEditorXML](#Настройка-DbEditorXML)
+ 5. [Установка и настройка EasyServer](#Установка-и-настройка-EasyServer)
  6. [Установка и настройка Monitor](#Установка-и-настройка-Monitor)
  7. [Запуск и сборка проекта](#Запуск-и-сборка-проекта)
 
