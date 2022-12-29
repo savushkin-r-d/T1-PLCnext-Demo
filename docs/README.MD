@@ -171,12 +171,27 @@ Monitor находится в папке P:\Monitor
 
 2. Комбинация клавиш CTRL+С при активном фокусе окна консоли. В данном случае содержимое консоли не очищается.
 
-
 Запустить EasyServer.
 
 Запустить Monitor.
 
+Сборка проекта в Visual Studio Code.
+
+<p align="center">
+<img align="center" src="images/project.png"> </p>
+<p align="center"> Рисунок 11 - Visual Studio Code </p>
+
+Соединение с Easy Server.
+
+<p align="center">
+<img align="center" src="images/lua_log.png"> </p>
+<p align="center"> Рисунок 12 - Easy Server </p>
+
 В Monitor будут видны все устройства проекта тестового стенда T1_PLCNext_Demo с возможностью управления.
+
+<p align="center">
+<img align="center" src="images/monitor_done.png"> </p>
+<p align="center"> Рисунок 13 - Monitor </p>
 
 # Запуск на контроллере
 
