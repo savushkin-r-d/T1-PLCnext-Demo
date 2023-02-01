@@ -86,7 +86,6 @@
 
 - Выбираем файл в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
-- Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и изменяем IP адрес на 127.0.0.1. Это необходимо для локального подключения.
 
 <p align="center">
 <img align="center" src="images/ip.png"> </p>
