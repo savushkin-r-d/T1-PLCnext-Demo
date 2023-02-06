@@ -38,7 +38,11 @@
 
 # Запуск в режиме эмуляции (эмулятор "на столе")
 
-Для всех компонентов следует создать на компьютере новый диск (P) и разместить их в нём. Все необходимые компоненты (такие как: EasyServer, Monitor) нужно скачать с USB устройства.
+Все необходимые компоненты (такие как: EasyServer, Monitor) находятся [здесь](https://github.com/savushkin-r-d/SCADA-ptusa-bin).
+
+Пути к необходимым файлам будут зависеть от того, на каком локальном диске вашего компьютера вы их разместите.
+
+В данной инcтрукции все файлы находятся на диске D:\ .
 
 ## Клонирование проекта
 
@@ -72,7 +76,7 @@
 
 - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
 
-- В папке P:\Monitor запускаем файл DbEditorXML.exe.
+- В папке D:\Monitor запускаем файл DbEditorXML.exe.
 
 - В меню нажимаем открыть драйвер.
 
@@ -80,21 +84,21 @@
 <img align="center" src="images/add_driver.png"> </p>
 <p align="center"> Рисунок 1 - Добавление драйвера </p>
 
-- Выбираем файл в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
+- Выбираем файл в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
-- Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и изменяем IP адрес на 127.0.0.1. Это необходимо для локального подключения.
+- Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и проверяем IP адрес. Должен быть установлен 127.0.0.1
 
 <p align="center">
 <img align="center" src="images/ip.png"> </p>
 <p align="center"> Рисунок 2 - Изменение IP адреса </p>
 
-- Далее нажимаем "Ок" и "Применить".
+- Далее нажимаем "Ок".
 
-- После этого в папке P:\Monitor запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
+- После этого в папке D:\Monitor запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
 
 ## Установка и настройка EasyServer
 
-Easy Server находится в папке P:\Monitor\EasyServer.exe.
+Easy Server находится в папке D:\Monitor\EasyServer.exe.
 
 - Необходимо запустить файл EasyServer.exe.
 
@@ -104,19 +108,19 @@ Easy Server находится в папке P:\Monitor\EasyServer.exe.
 <img align="center" src="images/monitor.png"> </p>
 <p align="center"> Рисунок 3 - Настройка сервера </p>
 
-- Прописываем путь P:\Monitor\ChBase
+- Прописываем путь D:\Monitor\ChBase
 
 <p align="center">
 <img align="center" src="images/server_path.png"> </p>
 <p align="center"> Рисунок 4 - Настройка пути к базе каналов </p>
 
-- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr.
+- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/add_project.png"> </p>
 <p align="center"> Рисунок 5 - Настройка проекта </p>
 
-- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
+- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/add_channel.png"> </p>
@@ -130,13 +134,13 @@ Easy Server находится в папке P:\Monitor\EasyServer.exe.
 <img align="center" src="images/server_channel_base.png"> </p>
 <p align="center"> Рисунок 7 - Настройка базы каналов </p>
 
-- Загружаем файл базы каналов. Файл находится в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
+- Загружаем файл базы каналов. Файл находится в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/create_channel_base.png"> </p>
 <p align="center"> Рисунок 8 - Настройка базы каналов </p>
 
-- Далее открываем проект. Файл находится в папке P:\Monitor\projects\T1_PLCNext_Demo.mpr.
+- Далее открываем проект. Файл находится в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/open_project.png"> </p>
@@ -144,11 +148,15 @@ Easy Server находится в папке P:\Monitor\EasyServer.exe.
 
 ## Установка и настройка Monitor
 
-Monitor находится в папке P:\Monitor
+Monitor находится в папке D:\Monitor
 
 - Необходимо запустить файл Monitor.exe.
 
-- В появившемся окне заполнить данные, которые указаны на рисунке 10 и нажать "Ок".
+- В окне "Меню проектов" нажимаем кнопку "Добавить" и выбираем файл T1_PLCNext_Demo.mpr .
+
+- Далее выбираем проект "T1_PLCNext_Demo" и нажимаем кнопку "Открыть".
+
+- В появившемся окне заполняем данные, которые указаны на рисунке 10 и нажимаем "Ок".
 
 <p align="center">
 <img align="center" src="images/connect_to_server.png"> </p>
@@ -158,7 +166,7 @@ Monitor находится в папке P:\Monitor
 
 Описание управляющей программы реализовано в виде Lua-скриптов.
 
-Для тестирования проекта в меню сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_P:\PTUSA-projects\T1_PLCNext_Demo\project.code-workspace_)".
+Для тестирования проекта в меню сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_D:\PTUSA-projects\T1_PLCNext_Demo\project.code-workspace_)".
 
 - Тестирование проекта в VS Code осуществляется несколькими способами:
 
@@ -204,7 +212,7 @@ Monitor находится в папке P:\Monitor
 <img align="center" src="images/ethernet_set.png"> </p>
 <p align="center"> Рисунок 14 - Настройка Ethernet </p>
 
-- Выбираем пункт "IP версии 4 (TCP/IPv4)" и и нажимаем кнопку "Свойства".
+- Выбираем пункт "IP версии 4 (TCP/IPv4)" и нажимаем кнопку "Свойства".
 
 - Заполняем поля "IP-адерс" и "Маска подсети" как указано на рисунке 15.
 
