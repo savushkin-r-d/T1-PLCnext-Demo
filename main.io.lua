@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.9.8279.20463
+--Eplanner version = 2022.10.8336.19418
 ------------------------------------------------------------------------------
 PAC_name = 'T1-PLCnext-Demo'
 PAC_id = '28204'
@@ -27,6 +27,7 @@ nodes =
              { 2702072 },        --AXL F AI2 AO2 1H,
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
              { 1027843 },        --AXL F IOL8 2H,
+             { 1088132 },        --AXL SE IOL4,
              { 1088132 },        --AXL SE IOL4,
             }
         },
@@ -68,29 +69,397 @@ devices =
         name    = 'V2',
         descr   = '',
         dtype   = 0,
-        subtype = 16, -- V_IOLINK_DO1_DI2
-        article = 'DEF.SORIO-1SV',
+        subtype = 15, -- V_IOLINK_MIXPROOF
+        article = ' DEF.SORIO-1SV',
         AO =
             {
                 {
                 node          = 1,
-                offset        = 40,
+                offset        = 72,
                 physical_port = 8,
                 logical_port  = 3,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         AI =
             {
                 {
                 node          = 1,
-                offset        = 40,
+                offset        = 72,
                 physical_port = 8,
                 logical_port  = 3,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         par = {1000 --[[P_ON_TIME]], 1 --[[P_FB]] }
+        },
+
+        {
+        name    = 'Y1V1',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                1,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V10',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                10,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V11',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                11,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V12',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                12,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V13',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                13,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V14',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                14,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V15',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                15,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V16',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                16,     --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V2',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                2,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V3',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                3,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V4',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                4,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V5',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                5,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V6',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                6,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V7',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                7,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V8',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                8,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
+        },
+
+        {
+        name    = 'Y1V9',
+        descr   = 'Донный клапан',
+        dtype   = 0,
+        subtype = 12, -- V_IOLINK_VTUG_DO1
+        article = 'OMR.E2A-S12KS04-M1-B1',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 36
+                },
+            },
+        rt_par = 
+                {
+                9,      --R_VTUG_NUMBER
+                1,      --R_VTUG_SIZE
+                },
         },
 
         {
@@ -122,10 +491,10 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 39,
+                offset        = 71,
                 physical_port = 0,
                 logical_port  = 1,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         par = {0 --[[P_DT]], 1000 --[[P_ERR]] }
@@ -155,7 +524,7 @@ devices =
         descr   = '',
         dtype   = 6,
         subtype = 2, -- GS_VIRT
-        article = 'IFM.LMT100',
+        article = 'MFS201',
         },
 
         {
@@ -168,10 +537,10 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 42,
+                offset        = 72,
                 physical_port = 12,
                 logical_port  = 4,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         par = {0 --[[P_C0]], 5 --[[P_DT]], 0 --[[P_ERR_MIN_FLOW]] }
