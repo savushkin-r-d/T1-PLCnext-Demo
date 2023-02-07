@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.9.8279.20463
+--Eplanner version = 2022.10.8336.19418
 ------------------------------------------------------------------------------
 PAC_name = 'T1-PLCnext-Demo'
 PAC_id = '28204'
@@ -27,6 +27,7 @@ nodes =
              { 2702072 },        --AXL F AI2 AO2 1H,
              { 2701916 },        --AXL F DI8/1 DO8/1 1H,
              { 1027843 },        --AXL F IOL8 2H,
+             { 1088132 },        --AXL SE IOL4,
              { 1088132 },        --AXL SE IOL4,
             }
         },
@@ -65,6 +66,35 @@ devices =
         },
 
         {
+        name    = 'V2',
+        descr   = '',
+        dtype   = 0,
+        subtype = 15, -- V_IOLINK_MIXPROOF
+        article = ' DEF.SORIO-1SV',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 72,
+                physical_port = 8,
+                logical_port  = 3,
+                module_offset = 68
+                },
+            },
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 72,
+                physical_port = 8,
+                logical_port  = 3,
+                module_offset = 68
+                },
+            },
+        par = {1000 --[[P_ON_TIME]], 1 --[[P_FB]] }
+        },
+
+        {
         name    = 'Y1V1',
         descr   = 'Донный клапан',
         dtype   = 0,
@@ -74,9 +104,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -97,9 +127,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -120,9 +150,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -143,9 +173,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -166,9 +196,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -189,9 +219,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -212,9 +242,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -235,9 +265,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -258,9 +288,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -281,9 +311,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -304,9 +334,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -327,9 +357,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -350,9 +380,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -373,9 +403,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -396,9 +426,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -419,9 +449,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 40,
-                physical_port = 8,
-                logical_port  = 3,
+                offset        = 39,
+                physical_port = 4,
+                logical_port  = 2,
                 module_offset = 36
                 },
             },
@@ -461,10 +491,10 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 39,
+                offset        = 71,
                 physical_port = 0,
                 logical_port  = 1,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         par = {0 --[[P_DT]], 1000 --[[P_ERR]] }
@@ -494,7 +524,7 @@ devices =
         descr   = '',
         dtype   = 6,
         subtype = 2, -- GS_VIRT
-        article = 'IFM.LMT100',
+        article = 'MFS201',
         },
 
         {
@@ -507,10 +537,10 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 41,
+                offset        = 72,
                 physical_port = 12,
                 logical_port  = 4,
-                module_offset = 36
+                module_offset = 68
                 },
             },
         par = {0 --[[P_C0]], 5 --[[P_DT]], 0 --[[P_ERR_MIN_FLOW]] }
