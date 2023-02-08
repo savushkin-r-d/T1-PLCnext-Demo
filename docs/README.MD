@@ -259,9 +259,9 @@ Monitor находится в папке D:\SCADA-ptusa-bin
 
 - Авторизуйтесь как администратор.
 <p align="center">
-<img align="center" src="images/WINSCP.png">
+<img align="center" src="images/winscp.png">
 </p>
-<p align="center"> Рисунок 20 - Авторизвция в WinSCP </p>
+<p align="center"> Рисунок 20 - Авторизация в WinSCP </p>
 
 По умолчанию введите следующие данные для авторизации:
 ```
@@ -600,7 +600,7 @@ sudo /etc/init.d/plcnext start
 <p align="center"> Рисунок 41 - Настройка сетевых параметров </p>
 
 Задаем требуемые настройки и записываем их в устройство.
-- В DbEditorXML меняем ip на 192.168.1.10.
+- В DbEditorXML меняем ip на *192.168.1.10*.
 - Запускаем EasyServer и Monitor.
 
 Общий вид подключения:
