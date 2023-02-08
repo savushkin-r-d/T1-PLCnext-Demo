@@ -26,19 +26,18 @@
 5. [Работа с проектом в среде PLCnext Engineer](#Работа-с-проектом-в-среде-PLCnext-Engineer)
 6. [Задание сетевых настроек контроллера](#Задание-сетевых-настроек-контроллера)
 7. [Подключение к контроллеру в программе PLCnext Engineer](#Подключение-к-контроллеру-в-программе-PLCnext-Engineer)
-8. [Задание пароля](#Задание-пароля)
-9. [Обновление библиотеки](#Обновление-библиотеки)
-10. [Копирование Lua-файлов проекта](#Копирование-Lua-файлов-проекта)
-11. [Включение суперпользователя](#Включение-суперпользователя)
-12. [Активация входа по SSH в качестве пользователя root](#Активация-входа-по-SSH-в-качестве-пользователя-root)
-13. [Деактивация входа по SSH в качестве пользователя root](#Деактивация-входа-по-SSH-в-качестве-пользователя-root)
-14. [Чтение логов](#Чтение-логов)
-15. [Запуск проекта](#Запуск-проекта)
-16. [Управление ходом выполнения проекта](#Управление-ходом-выполнения-проекта)
+8. [Обновление библиотеки](#Обновление-библиотеки)
+9. [Копирование Lua-файлов проекта](#Копирование-Lua-файлов-проекта)
+10. [Включение суперпользователя](#Включение-суперпользователя)
+11. [Активация входа по SSH в качестве пользователя root](#Активация-входа-по-SSH-в-качестве-пользователя-root)
+12. [Деактивация входа по SSH в качестве пользователя root](#Деактивация-входа-по-SSH-в-качестве-пользователя-root)
+13. [Чтение логов](#Чтение-логов)
+14. [Запуск проекта](#Запуск-проекта)
+15. [Управление ходом выполнения проекта](#Управление-ходом-выполнения-проекта)
 
 # Запуск в режиме эмуляции (эмулятор "на столе")
 
-Для всех компонентов следует создать на компьютере новый диск (P) и разместить их в нём. Все необходимые компоненты (такие как: EasyServer, Monitor) нужно скачать [здесь](https://github.com/savushkin-r-d/SCADA-ptusa-bin.git).
+Все необходимые компоненты (такие как: EasyServer, Monitor) нужно скачать [здесь](https://github.com/savushkin-r-d/SCADA-ptusa-bin.git).
 
 ## Клонирование проекта
 
@@ -72,7 +71,7 @@
 
 - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
 
-- В папке P:\Monitor запускаем файл DbEditorXML.exe.
+- В папке D:\SCADA-ptusa-bin запускаем файл DbEditorXML.exe.
 
 - В меню нажимаем открыть драйвер.
 
@@ -80,7 +79,7 @@
 <img align="center" src="images/add_driver.png"> </p>
 <p align="center"> Рисунок 1 - Добавление драйвера </p>
 
-- Выбираем файл в папке P:\P:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
+- Выбираем файл в папке D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
 - Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и изменяем IP адрес на 127.0.0.1. Это необходимо для локального подключения.
 
@@ -90,11 +89,11 @@
 
 - Далее нажимаем "Ок" и "Применить".
 
-- После этого в папке P:\P:\SCADA-ptusa-bin запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
+- После этого в папке D:\SCADA-ptusa-bin запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
 
 ## Установка и настройка EasyServer
 
-Easy Server находится в папке P:\P:\SCADA-ptusa-bin\EasyServer.exe.
+Easy Server находится в папке D:\SCADA-ptusa-bin\EasyServer.exe.
 
 - Необходимо запустить файл EasyServer.exe.
 
@@ -104,19 +103,19 @@ Easy Server находится в папке P:\P:\SCADA-ptusa-bin\EasyServer.ex
 <img align="center" src="images/monitor.png"> </p>
 <p align="center"> Рисунок 3 - Настройка сервера </p>
 
-- Прописываем путь P:\P:\SCADA-ptusa-bin\ChBase
+- Прописываем путь D:\SCADA-ptusa-bin\chBase
 
 <p align="center">
-<img align="center" src="images/server_path.png"> </p>
+<img align="center" src="images/setting_server.png"> </p>
 <p align="center"> Рисунок 4 - Настройка пути к базе каналов </p>
 
-- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке P:\P:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
+- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке D:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/add_project.png"> </p>
 <p align="center"> Рисунок 5 - Настройка проекта </p>
 
-- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке P:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
+- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке  D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/add_channel.png"> </p>
@@ -130,13 +129,13 @@ Easy Server находится в папке P:\P:\SCADA-ptusa-bin\EasyServer.ex
 <img align="center" src="images/server_channel_base.png"> </p>
 <p align="center"> Рисунок 7 - Настройка базы каналов </p>
 
-- Загружаем файл базы каналов. Файл находится в папке P:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx.
+- Загружаем файл базы каналов. Файл находится в папке D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/create_channel_base.png"> </p>
 <p align="center"> Рисунок 8 - Настройка базы каналов </p>
 
-- Далее открываем проект. Файл находится в папке P:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
+- Далее открываем проект. Файл находится в папке D:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/open_project.png"> </p>
@@ -144,11 +143,11 @@ Easy Server находится в папке P:\P:\SCADA-ptusa-bin\EasyServer.ex
 
 ## Установка и настройка Monitor
 
-Monitor находится в папке P:\SCADA-ptusa-bin
+Monitor находится в папке D:\SCADA-ptusa-bin
 
 - Необходимо запустить файл Monitor.exe.
 
-- Добавить файл из папки P:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr и открыть его.
+- Добавить файл из папки D:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr и открыть его.
  
 <p align="center">
 <img align="center" src="images/menu_monitor.png"> </p>
@@ -164,7 +163,7 @@ Monitor находится в папке P:\SCADA-ptusa-bin
 
 Описание управляющей программы реализовано в виде Lua-скриптов.
 
-Для тестирования проекта в меню Visual Studio Code сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_P:\T1_PLCNext_Demo\project)".
+Для тестирования проекта в меню Visual Studio Code сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_D:\T1_PLCNext_Demo\project)".
 
 - Тестирование проекта в VS Code осуществляется несколькими способами:
 
@@ -240,7 +239,7 @@ Monitor находится в папке P:\SCADA-ptusa-bin
 
 ## Установка файлов прошивки
 
-Последняя версия прошивки находится [здесь](https://www.phoenixcontact.com/online/portal/pi/pxc/product_detail_page/!ut/p/z1/3VfNctowEH4VLhyN5H_7SAgNkJDCAI3ti0e2ZarUf9gCh5wyfYy-R0-d9hngjSobOglMY6bD0INtzdgS-3273y4LErCAAawIrcgcURJHKGBz01Js4YaHfE_ihx_VsQrHV3fd8U33VhgPZfAJWMBK0thburTvAVOQoCQoarFKkQNMvngLiJOidA3MhKTLYiHFiyXO6HSdYLa4Q5dE5JAi9kedzi0wR5zAc7zEwZKOEhow3Obb5tfm5_br9oU9f7D7-_alwTXaRqfxoSHwssAmf7geqnS075mzapk7PHznasNTeJPh1XcNZiKYFMJIlFEUubjIwl_z9prSFDOzFU53hvsUXmOKSJD1KQ6PanGc2MTzw9jDe3SckaLeB1xsPsVPdL_mul-Oq8AoAhTNl2he0FQL5GHdBQp1F8jXXWDde7BX9x7s1b0He3XvwV7de1Cvew_qdf-K6nX_kdFVJtC8AqahNaE_HYMBE-uErdwNW7CVPLmtvVfbKyXYScHKzgnkcbGw2sBy44gW0RhFJpowx04ThohETbgHZk0YkIyWQPY-uutEzN6m2P0cxUE8X9tuHCZxhCOa2a9CWDSq6kPsQE5AKuQk6Iqcpqg6p3q-IMkQC4rnsJ26VbUZL_f6pUHFZn6SLu3rrj0yOqP-iXS1JfCwIjgHsyhOQ3ZimuyKUBbRE3UPKR6nyx6LF-syi9cRONmXRF9DKi8rOmB_yyc8KGd6OEEvX5R-fFl65bLJKU6OF6Qfnhv9oPLcOeHP6cskcCv6MvnXvkzCUBP3g5sZz1PsPL8d_pvPd8O-v5dXB4NDhxjsaFA8gsnJ6gj2X11paxE-SuZgledTP-w42uFjnf8Glh9cWw!!/?uri=pxc-iframe-integration:firmwaredownload&prodid=2404267).
+Последняя версия прошивки находится [здесь](https://www.phoenixcontact.com/en-pc/products/controller-axc-f-2152-2404267). Во вкладке Firmware скачайте последние версии Hardware Version и Compatible Tools.
 
 Чтобы обновить прошивку контроллера, выполните следующие действия:
 
@@ -256,9 +255,13 @@ Monitor находится в папке P:\SCADA-ptusa-bin
 
 ### Обновление прошивки контроллера через командную оболочку
 
-- Откройте клиентское программное обеспечение SFTP (например **WinSCP**).
+- Откройте клиентское программное обеспечение SFTP (например [WinSCP](https://winscp.net/eng/index.php)).
 
 - Авторизуйтесь как администратор.
+<p align="center">
+<img align="center" src="images/WINSCP.png">
+</p>
+<p align="center"> Рисунок 20 - Авторизвция в WinSCP </p>
 
 По умолчанию введите следующие данные для авторизации:
 ```
@@ -269,11 +272,11 @@ Monitor находится в папке P:\SCADA-ptusa-bin
 <p align="center">
 <img align="center" src="images/password_placement.png" height="400">
 </p>
-<p align="center"> Рисунок 20 - Нахождение пароля </p>
+<p align="center"> Рисунок 21 - Нахождение пароля </p>
 
 - Скопируйте файл прошивки *.raucb в **/opt/plcnext** каталог (каталог по умолчанию пользователя Linux «admin»).
 
-- Откройте командную оболочку с помощью инструмента командной строки (например, **PuTTY**).
+- Откройте командную оболочку с помощью инструмента командной строки (например, [PuTTY](https://www.putty.org/), в WinSCP сочетание клавиш Ctrl+P).
 
 - Авторизуйтесь как администратор.
 
@@ -303,7 +306,7 @@ sudo update-axcf2152
 <p align="center">
 <img align="center" src="images/Move.PNG">
 </p>
-<p align="center"> Рисунок 21 - Страница оповещения </p>
+<p align="center"> Рисунок 22 - Страница оповещения </p>
 
 - Необходимо нажать **Принять риск и продолжить**
 
@@ -312,7 +315,7 @@ sudo update-axcf2152
 <p align="center">
 <img align="center" src="images/Home_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 22 - Страница приветствия  </p>
+<p align="center"> Рисунок 23 - Страница приветствия  </p>
 
 - Нажимаем **Easy configuration**
 
@@ -327,14 +330,14 @@ sudo update-axcf2152
 <p align="center">
 <img align="center" src="images/controller_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 23 - Стартовая страница </p>
+<p align="center"> Рисунок 24 - Стартовая страница </p>
 
 Для обновления прошивки контроллера необходимо в ветке **Administration** перейти в вкладку **Firmware update**.
 
 <p align="center">
 <img align="center" src="images/firmware_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 24 - Страница обновления прошивки </p>
+<p align="center"> Рисунок 25 - Страница обновления прошивки </p>
 
 Затем нажимаем на кнопку **Browse...**, выбираем файл прошивки (*.raucb) и нажимаем *Ok*.
 
@@ -352,78 +355,54 @@ sudo update-axcf2152
 Открываем свойства проекта (двойной щелчок мышью по элементу дерева **Project**) - здесь мы видим текущие сетевые настройки для устройств проекта (контроллеров и узлов ввода\вывода).
 
 ![проект](images/project_settings.png)
-<p align="center"> Рисунок 25 - Задание настроек сети </p>
+<p align="center"> Рисунок 26 - Задание настроек сети </p>
 
 При необходимости, меняем сетевые настройки устройств проекта на данной странице.
 
 На вкладке **IP Subnet** отображаются настройки контроллера проекта (также их можно редактировать):
 
 ![настройки](images/IP_settings.png)
-<p align="center"> Рисунок 26 - Задание настроек подсети </p>
+<p align="center"> Рисунок 27 - Задание настроек подсети </p>
 
 ## Задание сетевых настроек контроллера
 
-Подключаем контроллер к питанию и сети. Переходим к вкладке **Online Devices** и нажимаем кнопку *Scan the network*:
+Подключаем контроллер к питанию и сети. Переходим к вкладке **Online Controllers** выбираем *Ethernet 2 Realtek USB GbE Family Controller* и нажимаем кнопку *Scan the network*:
 
-![поиск контроллера](images/online_scan.png)
-<p align="center"> Рисунок 27 - Поиск контроллера </p>
+<p align="center">
+<img align="center" src="images/scan_network1.png"> </p>
+<p align="center"> Рисунок 28 - Поиск контроллера </p>
 
 После успешного поиска в данном окне отобразятся найденные устройства - должен появиться подключенный контроллер с настройками по умолчанию:
 
 ![поиск контроллера](images/online_scan_ok.png)
-<p align="center"> Рисунок 28 - Найденные контроллеры </p>
+<p align="center"> Рисунок 29 - Найденные контроллеры </p>
 
 Указываем для найденного контроллера его соответствие в проекте. Для этого нужно выбрать контроллер с необходимым MAC address, указанный на корпусе:
 
 ![добавление контроллера](images/name_selecting.png)
-<p align="center"> Рисунок 29 - Добавление контроллера </p>
+<p align="center"> Рисунок 30 - Добавление контроллера </p>
 
 Данный контроллер добавится в проект и сконфигурируется, через некоторое время он отобразится с новыми настройками:
 
 ![добавление контроллера](images/settings_ok.png)
-<p align="center"> Рисунок 30 - Контролеры в проекте </p>
+<p align="center"> Рисунок 31 - Контролеры в проекте </p>
 
 ## Подключение к контроллеру в программе PLCnext Engineer
 
 Переходим на вкладку с настройками контроллера:
 
 ![добавление контроллера](images/PLC_connecting.png)
-<p align="center"> Рисунок 31 - Обзор контроллера </p>
+<p align="center"> Рисунок 32 - Обзор контроллера </p>
 
 Далее нажимаем на кнопку подключения:
 
 ![добавление контроллера](images/PLC_connecting_button.png)
-<p align="center"> Рисунок 32 - Подключение к контроллеру </p>
+<p align="center"> Рисунок 33 - Подключение к контроллеру </p>
 
 Далее вводим имя пользователя (**admin**) и пароль (**напечатан на корпусе контроллера**). После успешного подключения отображаются текущие параметры контроллера:
 
 ![добавление контроллера](images/PLC_info.png)
-<p align="center"> Рисунок 33 - Подключенный контроллер </p>
-
-## Задание пароля
-
-Нажимаем на кнопку изменения пароля и задаем новый пароль для пользователя **admin**:
-
-![изменение пароля](images/change_pass.png)
-<p align="center"> Рисунок 34 - Изменение пароля</p>
-
-Также можно изменить пароль через веб-браузер.
-<p> Для этого необходимо:
-
-- В адресной строке ввести IP-адрес контроллера.
-
-- По умолчанию введите следующие данные для авторизации:
-```
-Имя пользователя: admin
-Пароль: Напечатан на контроллере
-```
-
-- Переходим на вкладку **Security** -> **User Authentication** и нажимаем на кнопку **Set Password** и задаем новый пароль для пользователя **admin**:
-
-<p align="center">
-<img align="center" src="images/set_passwd.PNG" height="400">
-</p>
-<p align="center"> Рисунок 35 - Задание пароля в веб-браузере  </p>
+<p align="center"> Рисунок 34 - Подключенный контроллер </p>
 
 ## Обновление библиотеки
 
@@ -449,7 +428,6 @@ sudo update-axcf2152
 
 - Перезапустите службу **plcnext** (команда: **sudo /etc/init.d/plcnext restart**).
 
-
 ### Обновление-библиотеки через программное обеспечение PLCnext Engineer
 
 Для обновление библиотеки с помощью программного обеспечения необходимо:
@@ -460,14 +438,13 @@ sudo update-axcf2152
 
 - Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге **PLCnext Engineer\T1-PLCNext-Demo.pcwex**.
 
-- Переходим на вкладку с настройками контроллера (рисунок 12).
+- Переходим на вкладку с настройками контроллера.
 
-- Далее нажимаем на кнопку подключения (рисунок 13).
+- Далее нажимаем на кнопку подключения.
 
 - Вводим имя пользователя **admin** и пароль **обратитесь к администратору** После успешного подключения отображаются текущие параметры контроллера.
 
-- Нажимаем кнопку Записать и начать выполнение (рисунок 17).
-
+- Нажимаем кнопку Записать и начать выполнение.
 
 ## Копирование Lua-файлов проекта
 
@@ -477,20 +454,20 @@ sudo update-axcf2152
 
 Выбираем файлы проекта, которые необходимо записать на контроллер. Данные файлы находятся в текущем каталоге проекта. Список файлов, описывающих проект:
 
-- __*main.plua*__ - описание управляющей программы;
-- __*main.io.lua*__ - описание привязки устройств к модулям ввода/вывода;
-- __*main.devices.lua*__ - список всех устройств;
-- __*main.modbus_srv.lua*__ - описание взаимодействия с modbus-клиентами;
-- __*main.objects.lua*__ - описание объектов проекта;
-- __*main.profibus.lua*__ - описание profibus;
-- __*main.restrictions.lua*__ - описание ограничений;
-- __*prg.lua*__ - описание аппаратов, агрегатов.
+- *main.plua*__ - описание управляющей программы;
+- *main.io.lua*__ - описание привязки устройств к модулям ввода/вывода;
+- *main.devices.lua*__ - список всех устройств;
+- *main.modbus_srv.lua*__ - описание взаимодействия с modbus-клиентами;
+- *main.objects.lua*__ - описание объектов проекта;
+- *main.profibus.lua*__ - описание profibus;
+- *main.restrictions.lua*__ - описание ограничений;
+- *prg.lua*__ - описание аппаратов, агрегатов.
 
 Также необходимо скопировать системные файлы из каталога **sys**. Список системных файлов:
 
-- __*sys.devices.lua*__ - описание устройств;
-- __*sys.objects.lua*__ - описание объектов;
-- __*sys.io.lua*__ - описание модулей ввода-вывода;
+- *sys.devices.lua*__ - описание устройств;
+- *sys.objects.lua*__ - описание объектов;
+- *sys.io.lua*__ - описание модулей ввода-вывода;
 
 Копируем данные файлы на контроллер в отдельно созданный коталог **/opt/main/sys**.
 
@@ -566,15 +543,15 @@ tail -F /var/log/messages | awk '
 
 ## Запуск проекта
 
-Нажимаем кнопку **Записать и начать выполнение**:
+Нажимаем кнопку **Записать и начать выполнение** (F5):
 
 ![запуск](images/write_and_start_project.png)
-<p align="center"> Рисунок 36 - Запуск проекта</p>
+<p align="center"> Рисунок 35 - Запуск проекта </p>
 
 При успешном запуске в окне просмотра логов не должно быть аварийных сообщений:
 
 ![запуск](images/logs.png)
-<p align="center"> Рисунок 37 - Просмотр сообщений </p>
+<p align="center"> Рисунок 36 - Просмотр сообщений </p>
 
 ## Управление ходом выполнения проекта
 
@@ -598,33 +575,37 @@ sudo /etc/init.d/plcnext start
 Скачать с сайта Phoenix Contact утилиту [Startup+ от Phoenix Contact](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL) для настройки. После запуска данной утилиты открывается главное окно и выбираем создать новый проект:
 
 ![запуск](images/main_startup.png)
-<p align="center"> Рисунок 38 - Запуск утилиты</p>
+<p align="center"> Рисунок 37 - Запуск утилиты</p>
 
 В следующем окне выбираем модель баскаплера (Указана на корпусе устройства):
 
 ![выбор](images/model_AXLFBKETH.png)
-<p align="center"> Рисунок 39 - Выбор модели баскаплера</p>
+<p align="center"> Рисунок 38 - Выбор модели баскаплера</p>
 
 Жмём **Next** и выбираем тип подключения. В нашем случае Ethernet:
 
 ![настройка](images/Sellect_the_type_of_connection.png)
-<p align="center"> Рисунок 40 - Настройка сетевых параметров</p>
+<p align="center"> Рисунок 39 - Настройка сетевых параметров</p>
 
 Далее выбираем пункт *Найти устройство в сети и задать IP adress*:
 
 ![настройка](images/Assign_an_IP.png)
-<p align="center"> Рисунок 41 - Настройка сетевых параметров</p>
+<p align="center"> Рисунок 40 - Настройка сетевых параметров</p>
 
 Далее в списке обнаруженных устройств (посылающих запрос) необходимо выбрать требуемое (MAC адрес устройства должен соответствовать MAC адресу, который напечатан на корпусе настраиваемого узла BK ETH). Через двойной клик по необходимому устройству переходим к окну настройки:
 
-![меню](images/IP_assign_set.png)
-<p align="center"> Рисунок 42 - Настройка сетевых параметров</p>
+<p align="center">
+<img align="center" src="images/IP_assign_set.png">
+</p>
+<p align="center"> Рисунок 41 - Настройка сетевых параметров </p>
 
 Задаем требуемые настройки и записываем их в устройство.
+- В DbEditorXML меняем ip на 192.168.1.10.
+- Запускаем EasyServer и Monitor.
 
 Общий вид подключения:
 
 ![общий вид](images/CIP_default_AXL_F_bus.jpg)
-<p align="center"> Рисунок 43 - Общий вид</p>
+<p align="center"> Рисунок 42 - Общий вид</p>
 
 [#Клонирование-проекта]: #Клонирование-проекта
