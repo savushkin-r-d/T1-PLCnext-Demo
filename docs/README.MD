@@ -77,7 +77,7 @@
 
 - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
 
-- В папке D:\SCADA-ptusa-bin запускаем файл DbEditorXML.exe.
+- В папке D:\Monitor запускаем файл DbEditorXML.exe.
 
 - В меню нажимаем открыть драйвер.
 
@@ -85,7 +85,7 @@
 <img align="center" src="images/add_driver.png"> </p>
 <p align="center"> Рисунок 1 - Добавление драйвера </p>
 
-- Выбираем файл в папке D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
+- Выбираем файл в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
 - Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и проверяем IP адрес. Должен быть установлен 127.0.0.1
 
@@ -99,7 +99,7 @@
 
 ## Установка и настройка EasyServer
 
-Easy Server находится в папке D:\SCADA-ptusa-bin\EasyServer.exe.
+Easy Server находится в папке D:\Monitor\EasyServer.exe.
 
 - Необходимо запустить файл EasyServer.exe.
 
@@ -109,19 +109,19 @@ Easy Server находится в папке D:\SCADA-ptusa-bin\EasyServer.exe.
 <img align="center" src="images/monitor.png"> </p>
 <p align="center"> Рисунок 3 - Настройка сервера </p>
 
-- Прописываем путь D:\SCADA-ptusa-bin\chbase
+- Прописываем путь D:\Monitor\chbase
 
 <p align="center">
 <img align="center" src="images/server_path1.png"> </p>
 <p align="center"> Рисунок 4 - Настройка пути к базе каналов </p>
 
-- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке D:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
+- Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/add_project.png"> </p>
 <p align="center"> Рисунок 5 - Настройка проекта </p>
 
-- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx.
+- Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/add_channel.png"> </p>
@@ -135,13 +135,13 @@ Easy Server находится в папке D:\SCADA-ptusa-bin\EasyServer.exe.
 <img align="center" src="images/server_channel_base.png"> </p>
 <p align="center"> Рисунок 7 - Настройка базы каналов </p>
 
-- Загружаем файл базы каналов. Файл находится в папке D:\SCADA-ptusa-bin\chbase\T1_PLCNext_Demo.cdbx.
+- Загружаем файл базы каналов. Файл находится в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/create_channel_base.png"> </p>
 <p align="center"> Рисунок 8 - Настройка базы каналов </p>
 
-- Далее открываем проект. Файл находится в папке D:\SCADA-ptusa-bin\projects\T1_PLCNext_Demo.mpr.
+- Далее открываем проект. Файл находится в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/open_project.png"> </p>
@@ -149,7 +149,7 @@ Easy Server находится в папке D:\SCADA-ptusa-bin\EasyServer.exe.
 
 ## Установка и настройка Monitor
 
-Monitor находится в папке D:\SCADA-ptusa-bin
+Monitor находится в папке D:\Monitor
 
 - Необходимо запустить файл Monitor.exe.
 
