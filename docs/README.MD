@@ -208,10 +208,10 @@ Monitor находится в папке D:\Monitor
 
 Для сборки проекта необходимо:
 
-- клонировать проекты [ptusa_main](https://github.com/NogameNo-life/ptusa_main) и [T1-PLCnext-Demo](https://github.com/NogameNo-life/T1-PLCnext-Demo/tree/readme_addition)
+- клонировать репозитории [ptusa_main](https://github.com/NogameNo-life/ptusa_main) и [T1-PLCnext-Demo](https://github.com/NogameNo-life/T1-PLCnext-Demo/tree/readme_addition)
 
 ```cmd
-git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
+git clone --recurse-submodules git@github.com:savushkin-r-d/ptusa_main.git
 git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 ```
 
@@ -254,6 +254,12 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
   ]
 }
 ```
+
+После чего запустить:
+
+1. программу в режиме отладки (F5)
+2. EasyServer
+3. Monitor
 
 ## Взаимодействие с физическим устройством Bus Coupler
 
