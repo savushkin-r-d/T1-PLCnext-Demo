@@ -1,12 +1,13 @@
-# Настройка контроллера на примере проекта тестового стенда **T1_PLCNext_Demo**
+# Тестовый стенд **"T1_PLCNext_Demo"**
 
 | Тегов | Строк кода | Аппаратов | Агрегатов | Устройств | IO-Link I/O | Узлов | Модулей |
 |---|---|---|---|---|---|---|---|
 |![](statistics/tags_total.svg) |![](statistics/lines_total.svg) |![](statistics/units_total.svg) |![](statistics/agregates_total.svg) |![](statistics/devices_total.svg) |![](statistics/io_link_usage.svg) |![](statistics/io_couplers_total.svg) |![](statistics/io_modules_total.svg)
 
-# Содержание
 
-# Запуск в режиме эмуляции (эмулятор "на столе")
+## Содержание
+
+Запуск в режиме эмуляции (эмулятор "на столе").
 
 1. [Клонирование проекта](#клонирование-проекта)
 2. [Установка Visual Studio Code](#установка-visual-studio-code)
@@ -17,7 +18,7 @@
 7. [Запуск и сборка проекта](#запуск-и-сборка-проекта)
 8. [Взаимодействие с физическим устройством Bus Coupler](#взаимодействие-с-физическим-устройством-bus-coupler)
 
-# Запуск на контроллере
+Запуск на контроллере.
 
 1. [Проверка текущей версии прошивки через веб-браузер](#проверка-текущей-версии-прошивки-через-веб-браузер)
 2. [Установка файлов прошивки](#установка-файлов-прошивки)
@@ -36,7 +37,9 @@
 15. [Запуск проекта](#запуск-проекта)
 16. [Управление ходом выполнения проекта](#управление-ходом-выполнения-проекта)
 
-# Запуск в режиме эмуляции (эмулятор "на столе")
+Внешний вид демостенда.
+
+## Запуск в режиме эмуляции (эмулятор "на столе")
 
 Все необходимые компоненты (такие как: EasyServer, Monitor) находятся [здесь](https://github.com/savushkin-r-d/SCADA-ptusa-bin).
 
@@ -44,11 +47,11 @@
 
 В данной инcтрукции все файлы находятся на диске D:\ .
 
-## Клонирование проекта
+### Клонирование проекта
 
 Проект T1_PLCNext_Demo находится [здесь](https://github.com/savushkin-r-d/T1-PLCnext-Demo).
 
-## Установка Visual Studio Code
+### Установка Visual Studio Code
 
 Последняя версия Visual Studio Code находится [здесь](https://code.visualstudio.com/download).
 
@@ -60,7 +63,7 @@
 
 - Следуйте инструкциям мастера установки.
 
-## Установка Git LFS
+### Установка Git LFS
 
 Последняя версия Git LFS находится [здесь](https://git-lfs.github.com/).
 
@@ -72,7 +75,7 @@
 
 - Следуйте инструкциям мастера установки.
 
-## Настройка DbEditorXML
+### Настройка DbEditorXML
 
 - После установки EasyServer необходимо настроить IP адрес в DbEditorXML.
 
@@ -96,7 +99,7 @@
 
 - После этого в папке D:\Monitor запускаем приложение Bugger.exe, нажимаем "Показать" и проверяем, успешно ли загружен сервер.
 
-## Установка и настройка EasyServer
+### Установка и настройка EasyServer
 
 Easy Server находится в папке D:\Monitor\EasyServer.exe.
 
@@ -146,7 +149,7 @@ Easy Server находится в папке D:\Monitor\EasyServer.exe.
 <img align="center" src="images/open_project.png"> </p>
 <p align="center"> Рисунок 9 - Открытие проекта в EasyServer </p>
 
-## Установка и настройка Monitor
+### Установка и настройка Monitor
 
 Monitor находится в папке D:\Monitor
 
@@ -162,11 +165,11 @@ Monitor находится в папке D:\Monitor
 <img align="center" src="images/connect_to_server1.png"> </p>
 <p align="center"> Рисунок 10 - Подключение к серверу </p>
 
-## Запуск и сборка проекта
+### Запуск и сборка проекта
 
 Описание управляющей программы реализовано в виде Lua-скриптов.
 
-### Visual Studio Code
+#### Visual Studio Code
 
 Для тестирования проекта в меню сверху выбираем "Файл" -> "Открыть рабочую область из файла" -> "Выбираем файл рабочей области: (_D:\PTUSA-projects\T1_PLCNext_Demo\project.code-workspace_)".
 
@@ -186,7 +189,7 @@ Monitor находится в папке D:\Monitor
 
 Запустить Monitor.
 
-Сборка проекта в Visual Studio Code.
+Запустить проект в Visual Studio Code.
 
 <p align="center">
 <img align="center" src="images/project.png"> </p>
@@ -204,7 +207,7 @@ Monitor находится в папке D:\Monitor
 <img align="center" src="images/monitor_done.png"> </p>
 <p align="center"> Рисунок 13 - Monitor </p>
 
-### Visual Studio 2022
+#### Visual Studio 2022
 
 Для сборки проекта необходимо:
 
@@ -215,7 +218,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/ptusa_main.git
 git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 ```
 
-Если клонировали без сабмодулей, то их можно отдельно проинициализироать
+Если клонировали без подмодулей, то их можно отдельно проинициализировать:
 
   ```cmd
   git submodule --init --recursive
@@ -261,7 +264,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 2. EasyServer
 3. Monitor
 
-## Взаимодействие с физическим устройством Bus Coupler
+### Взаимодействие с физическим устройством Bus Coupler
 
 - С помощью Ethernet кабеля подключаем Bus Coupler к компьютеру.
 
@@ -299,7 +302,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 ## Запуск на контроллере
 
-## Проверка текущей версии прошивки через веб-браузер
+### Проверка текущей версии прошивки через веб-браузер
 
 - В адресной строке ввести IP-адрес контроллера по умолчанию *192.168.1.10*
 
@@ -337,7 +340,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 В правом верхнем углу можно увидеть версию пришивки. Перед тем как начать работу с проектом нужно проверить актуальность версии прошивки. Если на контроллере установлена свежая прошивка, то следующие 3 пункта пропускаем.
 
-## Установка файлов прошивки
+### Установка файлов прошивки
 
 Последняя версия прошивки находится [здесь](https://www.phoenixcontact.com/en-pc/products/controller-axc-f-2152-2404267#downloads-link-target), в разделе Firmware скачайте последние версии Hardware Version и Compatible Tools.
 
@@ -353,7 +356,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 При установке, файл прошивки (*.raucb) и PDF-файлы с информацией об устройстве будут скопированы в выбранный каталог.
 
-### Обновление прошивки через веб-браузер
+#### Обновление прошивки через веб-браузер
 
 Для обновления прошивки контроллера необходимо в ветке **Administration** перейти в вкладку **Firmware update**.
 
@@ -367,7 +370,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 Прошивка будет обновлена. Во время обновления прошивки светодиод RUN начинает мигать, а затем гаснет.
 После этого контроллер перезапускается. После полной инициализации контроллера светодиод RUN горит постоянно.
 
-### Обновление прошивки контроллера через командную оболочку
+#### Обновление прошивки контроллера через командную оболочку
 
 - Откройте клиентское программное обеспечение SFTP (например [WinSCP](https://winscp.net/eng/index.php)).
 
@@ -413,11 +416,11 @@ sudo update-axcf2152
 После этого контроллер перезапускается. После полной инициализации контроллера светодиод RUN горит постоянно.
 Файл обновления автоматически удаляется из **/opt/plcnext** directory.
 
-## Создание проекта PLCnext Engineer
+### Создание проекта PLCnext Engineer
 
 Копируем каталог проекта *PLCnext*, который находится здесь - **https://github.com/savushkin-r-d/T1-PLCnext-Demo/releases/latest** - в каталог проекта в подкаталог **PLCnext Engineer**.
 
-## Работа с проектом в среде PLCnext Engineer
+### Работа с проектом в среде PLCnext Engineer
 
 Запускаем PLCnext Engineer, открываем файл проекта, который находится в данном каталоге - **PLCnext Engineer\T1-PLCNext-Demo.pcwex**.
 
@@ -433,7 +436,7 @@ sudo update-axcf2152
 ![настройки](images/IP_settings.png)
 <p align="center"> Рисунок 26 - Задание настроек подсети </p>
 
-## Задание сетевых настроек контроллера
+### Задание сетевых настроек контроллера
 
 Подключаем контроллер к питанию и сети. Переходим к вкладке **Online Controllers** выбираем *Ethernet 2 Realtek USB GbE Family Controller* и нажимаем кнопку *Scan the network*:
 
@@ -456,7 +459,7 @@ sudo update-axcf2152
 ![добавление контроллера](images/settings_ok.png)
 <p align="center"> Рисунок 30 - Контролеры в проекте </p>
 
-## Подключение к контроллеру в программе PLCnext Engineer
+### Подключение к контроллеру в программе PLCnext Engineer
 
 Переходим на вкладку с настройками контроллера:
 
@@ -473,11 +476,11 @@ sudo update-axcf2152
 ![добавление контроллера](images/PLC_info.png)
 <p align="center"> Рисунок 33 - Подключенный контроллер </p>
 
-## Обновление библиотеки
+### Обновление библиотеки
 
 Последняя версия библиотеки находится [здесь](https://github.com/savushkin-r-d/ptusa_main/releases).
 
-### Обновление библиотеки через командную оболочку
+#### Обновление библиотеки через командную оболочку
 
 Для обновления библиотеки через командную оболочку необходимо:
 
@@ -497,7 +500,7 @@ sudo update-axcf2152
 
 - Перезапустите службу **plcnext** (команда: **sudo /etc/init.d/plcnext restart**).
 
-### Обновление-библиотеки через программное обеспечение PLCnext Engineer
+#### Обновление-библиотеки через программное обеспечение PLCnext Engineer
 
 Для обновление библиотеки с помощью программного обеспечения необходимо:
 
@@ -515,7 +518,7 @@ sudo update-axcf2152
 
 - Нажимаем кнопку Записать и начать выполнение (F5) (рисунок 33).
 
-## Копирование Lua-файлов проекта
+### Копирование Lua-файлов проекта
 
 Необходимо через **SFTP** интерфейс записать файлы конфигурации проекта на контроллер в каталог **/opt/main**.
 
@@ -539,7 +542,7 @@ sudo update-axcf2152
 
 Копируем данные файлы на контроллер в отдельно созданный коталог **/opt/main/sys**.
 
-## Включение суперпользователя
+### Включение суперпользователя
 
 Для включения пользователя **root** подключаемся по ssh (используя **Kitty**) и используем следующую команду:
 
@@ -559,7 +562,7 @@ Re-enter new password:
 passwd: password changed.
 ```
 
-## Активация входа по SSH в качестве пользователя root
+### Активация входа по SSH в качестве пользователя root
 
 - Подключитесь к контроллеру и войдите в систему **admin**.
 
@@ -569,7 +572,7 @@ passwd: password changed.
 
 - Перезапустите службу SSH с помощью  *sudo /etc/init.d/sshd restart*
 
-## Деактивация входа по SSH в качестве пользователя root
+### Деактивация входа по SSH в качестве пользователя root
 
 - Подключитесь к контроллеру и войдите в систему **admin**.
 
@@ -579,7 +582,7 @@ passwd: password changed.
 
 - Перезапустите службу SSH с помощью *sudo /etc/init.d/sshd restart*
 
-## Чтение логов
+### Чтение логов
 
 Для чтения сообщений от управляющей программы подключаемся по ssh (используя **Kitty**). Чтение логов доступно для пользователя **root**. Для переключения пользователя выполняем следующую команду:
 
@@ -609,7 +612,7 @@ tail -F /var/log/messages | awk '
   ' | grep ptusa
 ```
 
-## Запуск проекта через PLCnext
+### Запуск проекта через **PLCnext Engineer**
 
 Нажимаем кнопку **Записать и начать выполнение**:
 
@@ -621,7 +624,7 @@ tail -F /var/log/messages | awk '
 ![запуск](images/logs.png)
 <p align="center"> Рисунок 35 - Просмотр сообщений </p>
 
-## Управление ходом выполнения проекта
+### Управление ходом выполнения проекта
 
 Для перезапуска необходимо выполнить следующую команду в консоли:
 
@@ -636,9 +639,9 @@ sudo /etc/init.d/plcnext stop
 sudo /etc/init.d/plcnext start
 ```
 
-## Настройка устройств сопряжения с шиной *AXL F BK ETH*
+### Настройка устройств сопряжения с шиной *AXL F BK ETH*
 
-### Необходимо ознакомиться с протоколом [Startup+](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL).
+#### Необходимо ознакомиться с приложением [Startup+](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL).
 
 Скачать с сайта Phoenix Contact утилиту [Startup+ от Phoenix Contact](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL) для настройки. После запуска данной утилиты открывается главное окно и выбираем создать новый проект:
 
@@ -669,7 +672,7 @@ sudo /etc/init.d/plcnext start
 - В DbEditorXML меняем ip на *192.168.1.10*.
 - Запускаем EasyServer и Monitor.
 
-## Запуск проекта через консоль
+### Запуск проекта через консоль
 
 Для запуска проекта через консоль необходимо:
 
@@ -699,7 +702,15 @@ cd /opt/main/
 chmod +x ptusa_main
 ```
 
-Общий вид подключения:
+## Внешний вид демостенда
 
-![общий вид](images/CIP_default_AXL_F_bus.jpg)
+Разработанный демостенд:
+
+![общий вид](images/demo_stand.jpg)
 <p align="center"> Рисунок 41 - Общий вид</p>
+
+![общий вид](images/demo_stand_p1.jpg)
+<p align="center"> Рисунок 42 - Контроллер и узел ввода\вывода</p>
+
+![общий вид](images/demo_stand_p2.jpg)
+<p align="center"> Рисунок 43 - Датчики и исполнительные устройства</p>
