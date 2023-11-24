@@ -570,7 +570,7 @@ passwd: password changed.
 
 - Подключитесь к контроллеру и войдите в систему **admin**.
 
-- Откройте файл */etc/ssh/sshd_config* в подходящем клиент **WinSCP**.
+- Откройте файл */etc/ssh/sshd_config* в подходящем графическом клиенте **WinSCP**.
 
 - В разделе #Authentication: раскомментируйте запись: `#PermitRootLogin yes`.
 
