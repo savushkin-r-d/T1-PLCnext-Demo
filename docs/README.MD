@@ -276,7 +276,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 - Выбираем пункт "IP версии 4 (TCP/IPv4)" и нажимаем кнопку "Свойства".
 
-- Заполняем поля "IP-адерс" и "Маска подсети" как указано на рисунке 15.
+- Заполняем поля "IP-адрес" и "Маска подсети" как указано на рисунке 15.
 
 <p align="center">
 <img align="center" src="images/ethernet_ip.png"> </p>
@@ -678,7 +678,7 @@ sudo /etc/init.d/plcnext start
 
 1. Установить Toolchain нужной версии (подробная инструкция по установке [здесь](https://github.com/savushkin-r-d/ptusa_main#using-plcnext-technology-c-toolchain-in-windows)).
 
-2. Подключиться к контроллеру через клиенсткое программное обеспечение [WinSCP](https://winscp.net/eng/index.php).
+2. Подключиться к контроллеру через клиентское программное обеспечение [WinSCP](https://winscp.net/eng/index.php).
 
 3. Перейти в каталог для своего контроллера `ptusa_main\bin\install\AXCF3152\Release\bin\` и оттуда скопировать исполняемый файл `ptusa_main` в свой каталог на контроллере, например `/opt/main/`.
 
