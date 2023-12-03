@@ -286,7 +286,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 <p align="center">
 <img align="center" src="images/ping_1.png"> </p>
-<p align="center"> Рисунок 16 - Успешная отработка команды "ping 192.168.1.1" </p>
+<p align="center"> Рисунок 16 - Успешная отбработка команды "ping 192.168.1.1" </p>
 
 - Проверяем наличие связи с Bus Coupler. В командной строке прописываем команду "ping 192.168.1.11".
 
