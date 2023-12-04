@@ -368,7 +368,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 #### Обновление прошивки через веб-браузер
 
-Для обновления прошивки контроллера необходимо в ветке **Administration** перейти в вкладку **Firmware update**.
+Для обновления прошивки контроллера необходимо в ветке **Administration** перейти во вкладку **Firmware update**.
 
 <p align="center">
 <img align="center" src="images/firmware_page.PNG" height="400">
