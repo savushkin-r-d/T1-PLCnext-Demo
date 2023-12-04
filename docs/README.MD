@@ -55,6 +55,12 @@
 
 Проект T1_PLCNext_Demo находится [здесь](https://github.com/savushkin-r-d/T1-PLCnext-Demo).
 
+Чтобы клонировать репозиторий, выполните следующую команду:
+
+```cmd
+git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
+```
+
 ### Установка Visual Studio Code
 
 Последняя версия Visual Studio Code находится [здесь](https://code.visualstudio.com/download).
