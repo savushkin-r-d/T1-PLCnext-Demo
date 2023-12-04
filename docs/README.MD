@@ -4,10 +4,10 @@
 |---|---|---|---|---|---|---|---|
 |![](statistics/tags_total.svg) |![](statistics/lines_total.svg) |![](statistics/units_total.svg) |![](statistics/agregates_total.svg) |![](statistics/devices_total.svg) |![](statistics/io_link_usage.svg) |![](statistics/io_couplers_total.svg) |![](statistics/io_modules_total.svg)
 
-##  Внешний вид Demo-стенда
+## Внешний вид демостенда
 
-![общий вид](images/stand.jpg)
-<p align="center"> Рисунок 1 - Demostand</p>
+![общий вид](images/demo_stand.jpg)
+<p align="center"> Рисунок 1 - Демостенд</p>
 
 ## Содержание
 
@@ -324,7 +324,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/Home_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 21 - Страница приветствия  </p>
+<p align="center"> Рисунок 21 - Страница приветствия </p>
 
 - Нажимаем **Easy configuration**
 
@@ -574,7 +574,7 @@ passwd: password changed.
 
 - В разделе #Authentication: раскомментируйте запись: `#PermitRootLogin yes`.
 
-- Перезапустите службу SSH с помощью  *sudo /etc/init.d/sshd restart*
+- Перезапустите службу SSH с помощью *sudo /etc/init.d/sshd restart*
 
 ### Деактивация входа по SSH в качестве пользователя root
 
@@ -697,7 +697,7 @@ cd /opt/main/
 И запустить исполняемый файл `ptusa_main`
 
 ```bash
-./ptusa_main  main.plua  sys_path ./sys/
+./ptusa_main main.plua sys_path ./sys/
 ```
 
 В случае возникновения ошибки `Permission denied` добавить файлу флаг -x, чтобы сделать его исполняемым. Это можно реализовать либо через интерфейс ***WinSCP*** либо через консоль с помощью команды `chmod`.
