@@ -4,6 +4,10 @@
 |---|---|---|---|---|---|---|---|
 |![](statistics/tags_total.svg) |![](statistics/lines_total.svg) |![](statistics/units_total.svg) |![](statistics/agregates_total.svg) |![](statistics/devices_total.svg) |![](statistics/io_link_usage.svg) |![](statistics/io_couplers_total.svg) |![](statistics/io_modules_total.svg)
 
+##  Внешний вид Demo-стенда
+
+![общий вид](images/stand.jpg)
+<p align="center"> Рисунок 1 - Demostand</p>
 
 ## Содержание
 
@@ -85,7 +89,7 @@
 
 <p align="center">
 <img align="center" src="images/add_driver.png"> </p>
-<p align="center"> Рисунок 1 - Добавление драйвера </p>
+<p align="center"> Рисунок 2 - Добавление драйвера </p>
 
 - Выбираем файл в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
@@ -93,7 +97,7 @@
 
 <p align="center">
 <img align="center" src="images/ip.png"> </p>
-<p align="center"> Рисунок 2 - Изменение IP адреса </p>
+<p align="center"> Рисунок 3 - Изменение IP адреса </p>
 
 - Далее нажимаем "Ок".
 
@@ -109,25 +113,25 @@ Easy Server находится в папке D:\Monitor\EasyServer.exe.
 
 <p align="center">
 <img align="center" src="images/monitor.png"> </p>
-<p align="center"> Рисунок 3 - Настройка сервера </p>
+<p align="center"> Рисунок 4 - Настройка сервера </p>
 
 - Прописываем путь D:\Monitor\chbase
 
 <p align="center">
 <img align="center" src="images/server_path1.png"> </p>
-<p align="center"> Рисунок 4 - Настройка пути к базе каналов </p>
+<p align="center"> Рисунок 5 - Настройка пути к базе каналов </p>
 
 - Переходим во вкладку "Настройки проектов" и добавляем файл "T1_PLCNext_Demo.mpr", находящийся в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/add_project.png"> </p>
-<p align="center"> Рисунок 5 - Настройка проекта </p>
+<p align="center"> Рисунок 6 - Настройка проекта </p>
 
 - Далее переходим во вкладку "Настройка базы каналов" и добавляем файл "T1_PLCNext_Demo.cdbx", находящийся в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/add_channel.png"> </p>
-<p align="center"> Рисунок 6 - Настройка проекта </p>
+<p align="center"> Рисунок 7 - Настройка проекта </p>
 
 - После добавления необходимых файлов нажимаем кнопку "Ok".
 
@@ -135,19 +139,19 @@ Easy Server находится в папке D:\Monitor\EasyServer.exe.
 
 <p align="center">
 <img align="center" src="images/server_channel_base.png"> </p>
-<p align="center"> Рисунок 7 - Настройка базы каналов </p>
+<p align="center"> Рисунок 8 - Настройка базы каналов </p>
 
 - Загружаем файл базы каналов. Файл находится в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx.
 
 <p align="center">
 <img align="center" src="images/create_channel_base.png"> </p>
-<p align="center"> Рисунок 8 - Настройка базы каналов </p>
+<p align="center"> Рисунок 9 - Настройка базы каналов </p>
 
 - Далее открываем проект. Файл находится в папке D:\Monitor\projects\T1_PLCNext_Demo.mpr.
 
 <p align="center">
 <img align="center" src="images/open_project.png"> </p>
-<p align="center"> Рисунок 9 - Открытие проекта в EasyServer </p>
+<p align="center"> Рисунок 10 - Открытие проекта в EasyServer </p>
 
 ### Установка и настройка Monitor
 
@@ -163,7 +167,7 @@ Monitor находится в папке D:\Monitor
 
 <p align="center">
 <img align="center" src="images/connect_to_server1.png"> </p>
-<p align="center"> Рисунок 10 - Подключение к серверу </p>
+<p align="center"> Рисунок 11 - Подключение к серверу </p>
 
 ### Запуск и сборка проекта
 
@@ -193,19 +197,19 @@ Monitor находится в папке D:\Monitor
 
 <p align="center">
 <img align="center" src="images/project.png"> </p>
-<p align="center"> Рисунок 11 - Visual Studio Code </p>
+<p align="center"> Рисунок 12 - Visual Studio Code </p>
 
 Соединение с Easy Server.
 
 <p align="center">
 <img align="center" src="images/lua_log.png"> </p>
-<p align="center"> Рисунок 12 - Easy Server </p>
+<p align="center"> Рисунок 13 - Easy Server </p>
 
 В Monitor будут видны все устройства проекта тестового стенда T1_PLCNext_Demo с возможностью управления.
 
 <p align="center">
 <img align="center" src="images/monitor_done.png"> </p>
-<p align="center"> Рисунок 13 - Monitor </p>
+<p align="center"> Рисунок 14 - Monitor </p>
 
 #### Visual Studio 2022
 
@@ -272,7 +276,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 <p align="center">
 <img align="center" src="images/ethernet_set.png"> </p>
-<p align="center"> Рисунок 14 - Настройка Ethernet </p>
+<p align="center"> Рисунок 15 - Настройка Ethernet </p>
 
 - Выбираем пункт "IP версии 4 (TCP/IPv4)" и нажимаем кнопку "Свойства".
 
@@ -280,7 +284,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 <p align="center">
 <img align="center" src="images/ethernet_ip.png"> </p>
-<p align="center"> Рисунок 15 - Указание IP-адреса и маски подсети </p>
+<p align="center"> Рисунок 16 - Указание IP-адреса и маски подсети </p>
 
 - Проверяем корректность настройки локальной сети Bus Coupler. В командной строке прописываем команду "ping 192.168.1.1".
 
@@ -292,13 +296,13 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 <p align="center">
 <img align="center" src="images/ping_2.png"> </p>
-<p align="center"> Рисунок 17 - Успешная отработка команды "ping 192.168.1.11" </p>
+<p align="center"> Рисунок 18 - Успешная отработка команды "ping 192.168.1.11" </p>
 
 - В браузере прописываем IP-адрес: 192.168.1.11 и нажимаем "Enter", после чего произойдёт переход на стартовую страницу Bus Coupler.
 
 <p align="center">
 <img align="center" src="images/bus_coupler_chrome.png"> </p>
-<p align="center"> Рисунок 18 - Стартовая страница Bus Coupler </p>
+<p align="center"> Рисунок 19 - Стартовая страница Bus Coupler </p>
 
 ## Запуск на контроллере
 
@@ -311,7 +315,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/Move.PNG">
 </p>
-<p align="center"> Рисунок 19 - Страница оповещения </p>
+<p align="center"> Рисунок 20 - Страница оповещения </p>
 
 - Необходимо нажать **Принять риск и продолжить**
 
@@ -320,7 +324,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/Home_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 20 - Страница приветствия  </p>
+<p align="center"> Рисунок 21 - Страница приветствия  </p>
 
 - Нажимаем **Easy configuration**
 
@@ -336,7 +340,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/controller_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 21 - Стартовая страница </p>
+<p align="center"> Рисунок 22 - Стартовая страница </p>
 
 В правом верхнем углу можно увидеть версию пришивки. Перед тем как начать работу с проектом нужно проверить актуальность версии прошивки. Если на контроллере установлена свежая прошивка, то следующие 3 пункта пропускаем.
 
@@ -363,7 +367,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/firmware_page.PNG" height="400">
 </p>
-<p align="center"> Рисунок 22 - Страница обновления прошивки </p>
+<p align="center"> Рисунок 23 - Страница обновления прошивки </p>
 
 Затем нажимаем на кнопку **Browse...**, выбираем файл прошивки (*.raucb) и нажимаем *Ok*.
 
@@ -378,7 +382,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/winscp.png">
 </p>
-<p align="center"> Рисунок 23 - Авторизация в WinSCP </p>
+<p align="center"> Рисунок 24 - Авторизация в WinSCP </p>
 
 По умолчанию введите следующие данные для авторизации:
 
@@ -390,7 +394,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 <p align="center">
 <img align="center" src="images/password_placement.png" height="400">
 </p>
-<p align="center"> Рисунок 24 - Нахождение пароля </p>
+<p align="center"> Рисунок 25 - Нахождение пароля </p>
 
 - Скопируйте файл прошивки *.raucb в **/opt/plcnext** каталог (каталог по умолчанию пользователя Linux «admin»).
 
@@ -427,14 +431,14 @@ sudo update-axcf2152
 Открываем свойства проекта (двойной щелчок мышью по элементу дерева **Project**) - здесь мы видим текущие сетевые настройки для устройств проекта (контроллеров и узлов ввода\вывода).
 
 ![проект](images/project_settings.png)
-<p align="center"> Рисунок 25 - Задание настроек сети </p>
+<p align="center"> Рисунок 26 - Задание настроек сети </p>
 
 При необходимости, меняем сетевые настройки устройств проекта на данной странице.
 
 На вкладке **IP Subnet** отображаются настройки контроллера проекта (также их можно редактировать):
 
 ![настройки](images/IP_settings.png)
-<p align="center"> Рисунок 26 - Задание настроек подсети </p>
+<p align="center"> Рисунок 27 - Задание настроек подсети </p>
 
 ### Задание сетевых настроек контроллера
 
@@ -442,39 +446,39 @@ sudo update-axcf2152
 
 <p align="center">
 <img align="center" src="images/scan_network.png"> </p>
-<p align="center"> Рисунок 27 - Поиск контроллера </p>
+<p align="center"> Рисунок 28 - Поиск контроллера </p>
 
 После успешного поиска в данном окне отобразятся найденные устройства - должен появиться подключенный контроллер с настройками по умолчанию:
 
 ![поиск контроллера](images/online_scan_ok.png)
-<p align="center"> Рисунок 28 - Найденные контроллеры </p>
+<p align="center"> Рисунок 29 - Найденные контроллеры </p>
 
 Указываем для найденного контроллера его соответствие в проекте. Для этого нужно выбрать контроллер с необходимым MAC address, указанный на корпусе:
 
 ![добавление контроллера](images/name_selecting.png)
-<p align="center"> Рисунок 29 - Добавление контроллера </p>
+<p align="center"> Рисунок 30 - Добавление контроллера </p>
 
 Данный контроллер добавится в проект, через некоторое время он отобразится с новыми настройками:
 
 ![добавление контроллера](images/settings_ok.png)
-<p align="center"> Рисунок 30 - Контролеры в проекте </p>
+<p align="center"> Рисунок 31 - Контролеры в проекте </p>
 
 ### Подключение к контроллеру в программе PLCnext Engineer
 
 Переходим на вкладку с настройками контроллера:
 
 ![добавление контроллера](images/PLC_connecting.png)
-<p align="center"> Рисунок 31 - Обзор контроллера </p>
+<p align="center"> Рисунок 32 - Обзор контроллера </p>
 
 Далее нажимаем на кнопку подключения:
 
 ![добавление контроллера](images/PLC_connecting_button.png)
-<p align="center"> Рисунок 32 - Подключение к контроллеру </p>
+<p align="center"> Рисунок 33 - Подключение к контроллеру </p>
 
 Далее вводим имя пользователя (**admin**) и пароль (**напечатан на корпусе контроллера**). После успешного подключения отображаются текущие параметры контроллера:
 
 ![добавление контроллера](images/PLC_info.png)
-<p align="center"> Рисунок 33 - Подключенный контроллер </p>
+<p align="center"> Рисунок 34 - Подключенный контроллер </p>
 
 ### Обновление библиотеки
 
@@ -617,12 +621,12 @@ tail -F /var/log/messages | awk '
 Нажимаем кнопку **Записать и начать выполнение**:
 
 ![запуск](images/write_and_start_project.png)
-<p align="center"> Рисунок 34 - Запуск проекта</p>
+<p align="center"> Рисунок 35 - Запуск проекта</p>
 
 При успешном запуске в окне просмотра логов не должно быть аварийных сообщений:
 
 ![запуск](images/logs.png)
-<p align="center"> Рисунок 35 - Просмотр сообщений </p>
+<p align="center"> Рисунок 36 - Просмотр сообщений </p>
 
 ### Управление ходом выполнения проекта
 
@@ -646,7 +650,7 @@ sudo /etc/init.d/plcnext start
 Скачать с сайта Phoenix Contact утилиту [Startup+ от Phoenix Contact](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2700636&library=usen&pcck=P&tab=1&selectedCategory=ALL) для настройки. После запуска данной утилиты открывается главное окно и выбираем создать новый проект:
 
 ![запуск](images/main_startup.png)
-<p align="center"> Рисунок 36 - Запуск утилиты</p>
+<p align="center"> Рисунок 37 - Запуск утилиты</p>
 
 В следующем окне выбираем модель устройства сопряжения с шиной (Указана на корпусе устройства):
 
@@ -656,17 +660,17 @@ sudo /etc/init.d/plcnext start
 Жмём **Next** и выбираем тип подключения. В нашем случае Ethernet:
 
 ![настройка](images/Sellect_the_type_of_connection.png)
-<p align="center"> Рисунок 38 - Настройка сетевых параметров</p>
+<p align="center"> Рисунок 39 - Настройка сетевых параметров</p>
 
 Далее выбираем пункт *Найти устройство в сети и задать IP address*:
 
 ![настройка](images/Assign_an_IP.png)
-<p align="center"> Рисунок 39 - Настройка сетевых параметров</p>
+<p align="center"> Рисунок 40 - Настройка сетевых параметров</p>
 
 Далее в списке обнаруженных устройств (посылающих запрос) необходимо выбрать требуемое (MAC адрес устройства должен соответствовать MAC адресу, который напечатан на корпусе настраиваемого узла BK ETH). Через двойной клик по необходимому устройству переходим к окну настройки:
 
 ![меню](images/IP_assign_set.png)
-<p align="center"> Рисунок 40 - Настройка сетевых параметров</p>
+<p align="center"> Рисунок 41 - Настройка сетевых параметров</p>
 
 Задаем требуемые настройки и записываем их в устройство.
 - В DbEditorXML меняем ip на *192.168.1.10*.
@@ -702,15 +706,15 @@ cd /opt/main/
 chmod +x ptusa_main
 ```
 
-## Внешний вид демостенда
+## Наименование модулей и устройств
 
 Разработанный демостенд:
 
 ![общий вид](images/demo_stand.jpg)
-<p align="center"> Рисунок 41 - Общий вид</p>
+<p align="center"> Рисунок 42 - Общий вид</p>
 
 ![общий вид](images/demo_stand_p1.jpg)
-<p align="center"> Рисунок 42 - Контроллер и узел ввода\вывода</p>
+<p align="center"> Рисунок 43 - Контроллер и узел ввода\вывода</p>
 
 ![общий вид](images/demo_stand_p2.jpg)
-<p align="center"> Рисунок 43 - Датчики и исполнительные устройства</p>
+<p align="center"> Рисунок 44 - Датчики и исполнительные устройства</p>
