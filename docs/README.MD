@@ -394,7 +394,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 ```bash
 Имя пользователя: admin
-Пароль: Напечатан на контроллере.
+Пароль: Напечатан на контроллере.https://winscp.net/
 ```
 
 <p align="center">
@@ -404,7 +404,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 - Скопируйте файл прошивки *.raucb в **/opt/plcnext** каталог (каталог по умолчанию пользователя Linux «admin»).
 
-- Откройте командную оболочку с помощью инструмента командной строки (например, [PuTTY](https://www.putty.org/), в WinSCP сочетание клавиш Ctrl+P).
+- Откройте командную оболочку с помощью инструмента командной строки (например, [PuTTY](https://www.putty.org/), в [WinSCP](https://winscp.net/) сочетание клавиш Ctrl+P).
 
 - Авторизуйтесь как администратор.
 
