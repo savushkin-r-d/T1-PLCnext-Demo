@@ -394,7 +394,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 ```bash
 Имя пользователя: admin
-Пароль: Напечатан на контроллере.https://winscp.net/
+Пароль: Напечатан на контроллере.
 ```
 
 <p align="center">
