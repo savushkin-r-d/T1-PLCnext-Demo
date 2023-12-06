@@ -58,7 +58,7 @@
 Чтобы клонировать репозиторий, выполните следующую команду:
 
 ```cmd
-git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
+git clone --recurse-submodules https://github.com/savushkin-r-d/T1-PLCnext-Demo.git
 ```
 
 ### Установка Visual Studio Code
@@ -224,8 +224,8 @@ Monitor находится в папке D:\Monitor
 - клонировать репозитории [ptusa_main](https://github.com/NogameNo-life/ptusa_main) и [T1-PLCnext-Demo](https://github.com/NogameNo-life/T1-PLCnext-Demo/tree/readme_addition)
 
 ```cmd
-git clone --recurse-submodules git@github.com:savushkin-r-d/ptusa_main.git
-git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
+git clone --recurse-submodules https://github.com/savushkin-r-d/ptusa_main.git
+git clone --recurse-submodules https://github.com/savushkin-r-d/T1-PLCnext-Demo.git
 ```
 
 Если клонировали без подмодулей, то их можно отдельно проинициализировать:
