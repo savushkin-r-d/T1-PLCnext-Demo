@@ -286,7 +286,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 - Выбираем пункт "IP версии 4 (TCP/IPv4)" и нажимаем кнопку "Свойства".
 
-- Заполняем поля "IP-адрес" и "Маска подсети", как указано на рисунке 15.
+- Заполняем поля "IP-адрес" и "Маска подсети" как указано на рисунке 15.
 
 <p align="center">
 <img align="center" src="images/ethernet_ip.png"> </p>
