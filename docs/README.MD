@@ -236,7 +236,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 - запустить Visual Studio, выбрать *открыть локальную папку->D:\\ ...\ptusa_main*
 
-- сверху в управлениях конфигурации выбрать *Windows Debug(windows-VS2022-debug-build-windows-VS2022-debug)*
+- сверху в управлении конфигурациями выбрать *Windows Debug(windows-VS2022-debug-build-windows-VS2022-debug)*
 
 - выбрать элемент запуска *ptusa_main.exe(Debug\ptusa_main.exe)*
 
@@ -348,7 +348,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 </p>
 <p align="center"> Рисунок 22 - Стартовая страница </p>
 
-В правом верхнем углу можно увидеть версию прошивки. Перед тем как начать работу с проектом нужно проверить актуальность версии прошивки. Если на контроллере установлена свежая прошивка, то следующие 3 пункта пропускаем.
+В правом верхнем углу можно увидеть версию прошивки. Перед тем, как начать работу с проектом, нужно проверить актуальность версии прошивки. Если на контроллере установлена свежая прошивка, то следующие 3 пункта пропускаем.
 
 ### Установка файлов прошивки
 
@@ -368,7 +368,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 #### Обновление прошивки через веб-браузер
 
-Для обновления прошивки контроллера необходимо в ветке **Administration** перейти в вкладку **Firmware update**.
+Для обновления прошивки контроллера необходимо в ветке **Administration** перейти во вкладку **Firmware update**.
 
 <p align="center">
 <img align="center" src="images/firmware_page.PNG" height="400">
@@ -382,7 +382,7 @@ git clone --recurse-submodules git@github.com:savushkin-r-d/T1-PLCnext-Demo.git
 
 #### Обновление прошивки контроллера через командную оболочку
 
-- Откройте клиентское программное обеспечение SFTP (например [WinSCP](https://winscp.net/eng/index.php)).
+- Откройте клиентское программное обеспечение SFTP (например, [WinSCP](https://winscp.net/eng/index.php)).
 
 - Авторизуйтесь как администратор.
 <p align="center">
@@ -448,7 +448,7 @@ sudo update-axcf2152
 
 ### Задание сетевых настроек контроллера
 
-Подключаем контроллер к питанию и сети. Переходим к вкладке **Online Controllers** выбираем *Ethernet 2 Realtek USB GbE Family Controller* и нажимаем кнопку *Scan the network*:
+Подключаем контроллер к питанию и сети. Переходим к вкладке **Online Controllers**, выбираем *Ethernet 2 Realtek USB GbE Family Controller* и нажимаем кнопку *Scan the network*:
 
 <p align="center">
 <img align="center" src="images/scan_network.png"> </p>
@@ -524,7 +524,7 @@ sudo update-axcf2152
 
 - Далее нажимаем на кнопку подключения (рисунок 32).
 
-- Вводим имя пользователя **admin** и пароль **обратитесь к администратору** После успешного подключения отображаются текущие параметры контроллера.
+- Вводим имя пользователя **admin** и пароль **обратитесь к администратору**. После успешного подключения отображаются текущие параметры контроллера.
 
 - Нажимаем кнопку Записать и начать выполнение (F5) (рисунок 33).
 
@@ -690,7 +690,7 @@ sudo /etc/init.d/plcnext start
 
 2. Подключиться к контроллеру через клиентское программное обеспечение [WinSCP](https://winscp.net/eng/index.php).
 
-3. Перейти в каталог для своего контроллера `ptusa_main\bin\install\AXCF3152\Release\bin\` и оттуда скопировать исполняемый файл `ptusa_main` в свой каталог на контроллере, например `/opt/main/`.
+3. Перейти в каталог для своего контроллера `ptusa_main\bin\install\AXCF3152\Release\bin\` и оттуда скопировать исполняемый файл `ptusa_main` в свой каталог на контроллере, например, `/opt/main/`.
 
 4. Далее в этот же каталог скопировать файлы с расширением `lua` и `plua`, a также директории `spec` и `sys` из проекта `T1-PLCnext-Demo`.
 
@@ -706,7 +706,7 @@ cd /opt/main/
 ./ptusa_main main.plua sys_path ./sys/
 ```
 
-В случае возникновения ошибки `Permission denied` добавить файлу флаг -x, чтобы сделать его исполняемым. Это можно реализовать либо через интерфейс ***WinSCP***, либо через консоль с помощью команды `chmod`.
+В случае возникновения ошибки `Permission denied`, добавить файлу флаг -x, чтобы сделать его исполняемым. Это можно реализовать либо через интерфейс ***WinSCP***, либо через консоль с помощью команды `chmod`.
 
 ```bash
 chmod +x ptusa_main
