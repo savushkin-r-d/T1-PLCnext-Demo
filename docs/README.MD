@@ -99,7 +99,7 @@ git clone --recurse-submodules https://github.com/savushkin-r-d/T1-PLCnext-Demo.
 
 - Выбираем файл в папке D:\Monitor\chbase\T1_PLCNext_Demo.cdbx и нажимаем "Открыть".
 
-- Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и проверяем IP адрес. Должен быть установлен 127.0.0.1
+- Далее во вкладке "Устройства" выбираем "T1_PLCNext_Demo" и проверяем IP адрес. Он должен быть следующим - `127.0.0.1`.
 
 <p align="center">
 <img align="center" src="images/ip.png"> </p>
