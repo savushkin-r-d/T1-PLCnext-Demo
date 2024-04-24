@@ -725,57 +725,45 @@ chmod +x ptusa_main
 ![общий вид](images/demo_stand_p2.jpg)
 <p align="center"> Рисунок 44 - Датчики и исполнительные устройства</p>
 
-<style>
-.clean-topbar {
-  position: absolute;
-  height: 710px;
-  width: 950px;
-  
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.link{
-  position: absolute;
-}
-
-.valve-terminal {
-  top: 10px;
-  left: 290px;
-}
-
-.PT
-{
-  top: 100px;
-  left: 470px;
-}
-
-.HLA
-{
-  top: 101px;
-  left: 720px;
-}
-</style>
-
-<div class="clean-topbar" style="background-image:url(images/demo_stand_p2.jpg)">
+<div
+  style="
+    background-image:url(images/demo_stand_p2.jpg);
+    position:absolute;
+    height:710px;
+    width:950px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  ">
   
   <a href=https://www.emc-machinery.com/products_page/172.html>
-    <button class="link valve-terminal" name="button">
+    <button style="
+      position: absolute;
+      top: 10px;
+      left: 290px;
+    ">
       Пневмоостров<BR/>
       E*MC ESV LK-32
     </button>
   </a>
 
   <a href=https://t-automation.by/pi2797>
-    <button class="link PT" name="button">
+    <button style="
+      position: absolute;
+      top: 100px;
+      left: 470px;
+    ">
       Датчик давления<BR/>
       IFM PI2797
     </button>
   </a>
 
   <a href=https://www.phoenixcontact.com/ru-pc/produkty/soedinitelnyi-element-psd-s-ce-sm-screw-2700093>
-    <button class="link HLA" name="button">
+    <button style="
+      position: absolute;
+      top: 101px;
+      left: 720px;
+    ">
       Сигнальная колонна<BR/>
       Phoenix Contact PSD-S CE-SM
     </button>
