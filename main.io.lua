@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.10.8336.19418
+--Eplanner version = 2024.5.8914.17940
 ------------------------------------------------------------------------------
 PAC_name = 'T1-PLCnext-Demo'
 PAC_id = '28204'
@@ -70,7 +70,7 @@ devices =
         descr   = '',
         dtype   = 0,
         subtype = 15, -- V_IOLINK_MIXPROOF
-        article = ' DEF.SORIO-1SV',
+        article = 'DEF.SORIO-1SV',
         AO =
             {
                 {
@@ -537,7 +537,7 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 72,
+                offset        = 74,
                 physical_port = 12,
                 logical_port  = 4,
                 module_offset = 68
@@ -1188,7 +1188,7 @@ devices =
                 node          = 1,
                 offset        = 2,
                 physical_port = 1,
-                logical_port  = 2,
+                logical_port  = 3,
                 module_offset = 1
                 },
             },
@@ -1207,7 +1207,7 @@ devices =
                 node          = 1,
                 offset        = 1,
                 physical_port = 2,
-                logical_port  = 3,
+                logical_port  = 5,
                 module_offset = 1
                 },
             },
@@ -1226,7 +1226,7 @@ devices =
                 node          = 1,
                 offset        = 2,
                 physical_port = 3,
-                logical_port  = 4,
+                logical_port  = 7,
                 module_offset = 1
                 },
             },
@@ -1327,6 +1327,34 @@ devices =
                 physical_port = 71,
                 logical_port  = 6,
                 module_offset = 4
+                },
+            },
+        },
+
+        {
+        name    = 'G1',
+        descr   = '',
+        dtype   = 25,
+        subtype = 1, -- G_IOL_4
+        article = 'PXC.1252696',
+        AO =
+            {
+                {
+                node          = 1,
+                offset        = 72,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 68
+                },
+            },
+        AI =
+            {
+                {
+                node          = 1,
+                offset        = 72,
+                physical_port = 4,
+                logical_port  = 2,
+                module_offset = 68
                 },
             },
         },
