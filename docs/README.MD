@@ -4,6 +4,8 @@
 |---|---|---|---|---|---|---|---|
 |![](statistics/tags_total.svg) |![](statistics/lines_total.svg) |![](statistics/units_total.svg) |![](statistics/agregates_total.svg) |![](statistics/devices_total.svg) |![](statistics/io_link_usage.svg) |![](statistics/io_couplers_total.svg) |![](statistics/io_modules_total.svg)
 
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./READMEBY.MD) 
 ## Внешний вид демостенда
 
 ![общий вид](images/demo_stand.jpg)
